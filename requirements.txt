@@ -1,0 +1,4 @@
+Pillow==7.0.0
+python-bidi==0.4.2
+reportlab==3.5.34
+six==1.14.0
