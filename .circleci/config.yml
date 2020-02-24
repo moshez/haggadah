@@ -8,14 +8,15 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
       - run:
           command: pip install tox
           name: ToxInstall
-      - python/save-cache
       - run:
           command: tox
           name: Tox
+      - store_artifacts:
+          path: build/tox/py37/tmp/haggadah.pdf
+          destination: haggadah.pdf
 
 workflows:
   main:
