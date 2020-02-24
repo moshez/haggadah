@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: pip install tox
+          name: ToxInstall
+      - run:
+          command: tox
+          name: Tox
+      - store_artifacts:
+          path: build/tox/py37/tmp/haggadah.pdf
+          destination: haggadah.pdf
+
+workflows:
+  main:
+    jobs:
+      - build-and-test

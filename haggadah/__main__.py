@@ -1,3 +1,5 @@
+import sys
+
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
@@ -11,7 +13,7 @@ from bidi import algorithm
 pdfmetrics.registerFont(TTFont('Hebrew', 'ShlomoSemiStam.ttf'))
 pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
 
-c = canvas.Canvas("hello.pdf") 
+c = canvas.Canvas(sys.argv[1])
 c.setFont("Hebrew", 14)
 input = "וּרְחַץ"
 c.drawString(200, 800, algorithm.get_display(input))
