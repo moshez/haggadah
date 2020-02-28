@@ -97,5 +97,56 @@ c.drawString(200, 800,  algorithm.get_display("בְּצֵאת יִשְׂרָאֵ
 
 c.showPage()
 
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("קַדֵּשׁ"))
+
+c.showPage()
+
+c.setFont("English", 14)
+
+c.drawString(200, 800, "Magid: Second cup of wine")
+
+c.showPage()
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("רָחְצָה"))
+c.showPage()
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("מוֹצִיא מַצָּה"))
+c.showPage()
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("מָרוֹר"))
+c.showPage()
+
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("כּוֹרֵךְ"))
+c.showPage()
+
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("שֻׁלְחָן עוֹרֵךְ"))
+c.showPage()
+
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("צָפוּן"))
+c.showPage()
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("בָּרֵךְ"))
+c.showPage()
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("הַלֵּל"))
+c.showPage()
+
+
+c.setFont("Hebrew", 14)
+c.drawString(200, 800,  algorithm.get_display("נִרְצָה"))
+c.showPage()
+
 
 c.save()
