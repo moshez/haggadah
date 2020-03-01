@@ -14,56 +14,63 @@ pdfmetrics.registerFont(TTFont('Hebrew', 'ShlomoSemiStam.ttf'))
 pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
 
 c = canvas.Canvas(sys.argv[1])
-c.setFont("Hebrew", 14)
-input = "וּרְחַץ"
-c.drawString(200, 800, algorithm.get_display(input))
-c.setFont("English", 14)
-c.drawString(200, 600,
-             algorithm.get_display("Wash your hands without blessing"))
+
+from haggadah.output import write, write_multi
+
+write(c, "Hebrew", 200, 800,
+      "וּרְחַץ")
+write(c, "English", 200, 600, "Wash your hands without blessing")
+
 c.showPage()
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,
-             algorithm.get_display("כַּרְפַּס"))
-c.setFont("English", 14)
-c.drawString(200, 600,
-             algorithm.get_display("Take one small strawberry, "
-                                   "and dip it in chocolate"))
-c.setFont("Hebrew", 14)
-c.drawString(100, 500,
-       algorithm.get_display("בָּרוּךְ אַתָּה יְ‑יָ אֱ‑לֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הָעֵץ"))
-c.setFont("English", 14)
-c.drawString(100, 400,
+
+write(c, "Hebrew", 200, 800,"כַּרְפַּס")
+write(c, "English", 200, 600,
+      "Take one small strawberry, "
+       "and dip it in chocolate")
+
+write(c, "Hebrew", 100, 500,
+      "בָּרוּךְ אַתָּה יְ‑יָ אֱ‑לֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הָעֵץ")
+
+write(c, "English", 100, 400,
 "Baruch atah A-donay, Elo-heinu Melech Ha’Olam borei pri ha-aitz.")
-c.drawString(100, 300,
-"Blessed are You, L-rd our G-d, King of the universe, who creates the fruit of the tree.")
+
+write_multi(c, "English", 100, 300,
+["Blessed are You, L-rd our G-d, King of the universe, who creates the ",
+ "fruit of the tree."])
+
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,
-             algorithm.get_display("יַחַץ"))
-c.setFont("English", 14)
-c.drawString(100, 600,
-"Split the middle matsah in two, and conceal the larger piece to use it for the afikoman.")
-c.drawString(100, 500, "From now on, the kids should try to steal the afikoman.")
+write(c, "Hebrew", 200, 800, "יַחַץ")
+write_multi(c, "English", 100, 600,
+["Split the middle matsah in two, and conceal the larger piece to use",
+ "it for the afikoman."])
+write(c, "English", 100, 500, "From now on, the kids should try to steal the afikoman.")
+
 c.showPage()
 
+write(c, "Hebrew", 200, 800,
+      "מַגִּיד")
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,
-             algorithm.get_display("מַגִּיד"))
-c.setFont("English", 14)
-c.drawString(100, 600,
-"We start in Aramaic. In Jewish tradition, we pray in Hebrew, to encourage the angels to intercede on our behalf")
-c.drawString(100, 500,
-"But tonight, we thank God in person for the miracles. Angels do not understand Aramaic. The leader uncovers the matsot, raises the Seder plate. Everybody recites:")
+write_multi(c, "English", 50, 600,
+[ "We start in Aramaic. In Jewish tradition, we pray in Hebrew,",
+  " to encourage the angels to intercede on our behalf.",
+ "But tonight, we thank God in person for the miracles.",
+ "Angels do not understand Aramaic, so God has to listen to us Himself.",
+ "The leader uncovers the matsot, raises the Seder plate. ",
+ "Everybody recites:"])
 
-c.setFont("Hebrew", 14)
-c.drawString(100, 450, algorithm.get_display("""
-הָא לַחְמָא עַנְיָא דִּי אֲכָלוּ אַבְהָתָנָא בְאַרְעָא דְמִצְרָיִם. כָּל דִכְפִין יֵיתֵי וְיֵיכֹל, כָּל דִצְרִיךְ יֵיתֵי וְיִפְסַח. הָשַּׁתָּא הָכָא, לְשָׁנָה הַבָּאָה בְּאַרְעָא דְיִשְׂרָאֵל. הָשַּׁתָּא עַבְדֵי, לְשָׁנָה הַבָּאָה בְּנֵי חוֹרִין. 
-"""))
+write_multi(c, "Hebrew", 50, 450,
+["הָא לַחְמָא עַנְיָא דִּי אֲכָלוּ אַבְהָתָנָא בְאַרְעָא דְמִצְרָיִם.",
+ "כָּל דִכְפִין יֵיתֵי וְיֵיכֹל, כָּל דִצְרִיךְ יֵיתֵי וְיִפְסַח.",
+ "הָשַּׁתָּא הָכָא, לְשָׁנָה הַבָּאָה בְּאַרְעָא דְיִשְׂרָאֵל.",
+ "הָשַּׁתָּא עַבְדֵי, לְשָׁנָה הַבָּאָה בְּנֵי חוֹרִין."
+])
 
-c.setFont("English", 14)
-c.drawString(100, 200, "Ha lachma anya di achalu avhatana b’ara d’mitzrayim. Kol dichfin yeitei v’yeichol, kol ditzrich yeitei v’yifsach. Hashata hacha, l’shanah habaah b’ara d’Yisrael. Hashata avdei, l’shanah habaah b’nei chorin. ")
+write_multi(c, "English", 50, 300,
+["Ha lachma anya di achalu avhatana b’ara d’mitzrayim.",
+ "Kol dichfin yeitei v’yeichol, kol ditzrich yeitei",
+ "v’yifsach. Hashata hacha, l’shanah habaah b’ara d’Yisrael.",
+ "Hashata avdei, l’shanah habaah b’nei chorin. "])
 
 
 c.showPage()
