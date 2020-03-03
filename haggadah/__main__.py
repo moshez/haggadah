@@ -75,19 +75,31 @@ write_multi(c, "English", 50, 300,
 
 c.showPage()
 
-c.drawString(200, 800, "Four Questions")
+write(c, "English", 200, 800, "Four Questions")
 
 
-c.setFont("Hebrew", 14)
+write_multi(c, "Hebrew", 100, 750, 
+["מַה נִּשְׁתַּנָּה הַלַּיְלָה הַזֶּה מִכָּל הַלֵּילוֹת?",
+"שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין חָמֵץ וּמַצָּה, הַלַּיְלָה הַזֶּה – כֻּלּוֹ מַצָּה.",
+"שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין שְׁאָר יְרָקוֹת – הַלַּיְלָה הַזֶּה (כֻּלּוֹ) מָרוֹר.",
+"שֶׁבְּכָל הַלֵּילוֹת אֵין אָנוּ מַטְבִּילִין אֲפִילוּ פַּעַם אֶחָת – הַלַּיְלָה הַזֶּה שְׁתֵּי פְעָמִים.",
+"שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין בֵּין יוֹשְׁבִין וּבֵין מְסֻבִּין – הַלַּיְלָה הַזֶּה כֻּלָּנוּ מְסֻבִּין."
+])
 
-c.drawString(100, 750, 
-algorithm.get_display("מַה נִּשְׁתַּנָּה הַלַּיְלָה הַזֶּה מִכָּל הַלֵּילוֹת? שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין חָמֵץ וּמַצָּה, הַלַּיְלָה הַזֶּה – כֻּלּוֹ מַצָּה. שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין שְׁאָר יְרָקוֹת – הַלַּיְלָה הַזֶּה (כֻּלּוֹ) מָרוֹר. שֶׁבְּכָל הַלֵּילוֹת אֵין אָנוּ מַטְבִּילִין אֲפִילוּ פַּעַם אֶחָת – הַלַּיְלָה הַזֶּה שְׁתֵּי פְעָמִים. שֶׁבְּכָל הַלֵּילוֹת אָנוּ אוֹכְלִין בֵּין יוֹשְׁבִין וּבֵין מְסֻבִּין – הַלַּיְלָה הַזֶּה כֻּלָּנוּ מְסֻבִּין. "))
+write_multi(c, "English", 100, 600, 
+["Ma nishtanah halailah hazeh mikol haleilot?",
+"Sheb’khol haleilot anu okhlin umatzah;", "halailah hazeh, kuloh matzah.",
+"Sheb’khol haleilot anu okhlin sh’ar y’rakot;", "halailah hazeh, maror.",
+"Sheb’khol haleilot ein anu matbilin afilu pa’am ehat;", "halailah hazeh, shtei f’amim.",
+"Sheb’khol haleilot anu okhlin bein yoshvin uvein m’subin;", "halailah hazeh, kulanu m’subin."]
+)
 
-c.setFont("English", 14)
-
-c.drawString(100, 600, "Ma nishtanah halailah hazeh mikol haleilot? Sheb’khol haleilot anu okhlin umatzah; halailah hazeh, kuloh matzah. Sheb’khol haleilot anu okhlin sh’ar y’rakot; halailah hazeh, maror. Sheb’khol haleilot ein anu matbilin afilu pa’am ehat; halailah hazeh, shtei f’amim. Sheb’khol haleilot anu okhlin bein yoshvin uvein m’subin; halailah hazeh, kulanu m’subin.")
-
-c.drawString(100, 500, "What differentiates this night from all [other] nights? On all [other] nights we eat chamets and matsa; this night, only matsa? On all [other] nights we eat other vegetables; tonight (only) marror. On all [other] nights, we don't dip [our food], even one time; tonight [we dip it] twice. On [all] other nights, we eat either sitting or reclining; tonight we all recline. ")
+write_multi(c, "English", 100, 450,
+["What differentiates this night from all [other] nights?",
+ "On all [other] nights we eat chamets and matsa;", "this night, only matsa?", 
+ "On all [other] nights we eat other vegetables;", "tonight (only) marror.",
+ "On all [other] nights, we don't dip [our food], even one time;", "tonight [we dip it] twice.",
+ "On [all] other nights, we eat either sitting or reclining;", "tonight we all recline."])
 c.showPage()
 
 c.drawString(200, 800, "The Ten Plagues")
