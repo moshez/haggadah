@@ -15,7 +15,7 @@ pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
 
 c = canvas.Canvas(sys.argv[1])
 
-from haggadah.output import write, write_multi
+from haggadah.output import write, write_multi, write_lines
 
 write(c, "Hebrew", 200, 800,
       "וּרְחַץ")
@@ -103,6 +103,78 @@ write_multi(c, "English", 100, 450,
 c.showPage()
 
 c.drawString(200, 800, "The Ten Plagues")
+
+write_lines(c, "English", 100, 750, """\
+And when he says, "blood and fire and pillars of smoke" and the
+ten plagues and  "detsakh," "adash" and "ba'achab," he should pour
+out a little wine from his cup.
+""")
+
+write(c, "Hebrew", 100, 700, "דָּם וָאֵשׁ וְתִימְרוֹת עָשָׁן.")
+
+write(c, "English", 100, 675, "Dam v'esh v'timrot ashan")
+
+write(c, "English", 100, 650, "blood and fire and pillars of smoke.")
+
+write(c, "Hebrew", 50, 625, "אֵלּוּ עֶשֶׂר מַכּוֹת שֶׁהֵבִיא הַקָּדוֹשׁ בָּרוּךְ הוּא עַל־הַמִּצְרִים בְּמִצְרַיִם, וְאֵלוּ הֵן:")
+
+write_lines(c, "English", 50, 600, """\
+Elu eser makot sh'hevi hakadosh baruch hu al hamitzri'im
+b'mitzraim, v'elu hen      
+""")
+write_lines(c, "English", 100, 550, """\
+These are [the] ten plagues that the Holy One, blessed be He,
+brought on the Egyptians in Egypt and they are: """)
+
+write_lines(c, "Hebrew", 500, 500, """\
+דָּם
+צְפַרְדֵּעַ
+כִּנִּים
+עָרוֹב
+דֶּבֶר
+שְׁחִין
+בָּרָד
+אַרְבֶּה
+חשֶׁךְ
+מַכַּת בְּכוֹרוֹת
+""")
+
+write_lines(c, "English", 50, 500, """\
+Blood                      
+Frogs                      
+Lice                       
+Mixture (of wild animals)  
+Pestilence                 
+Boils                      
+Locusts                    
+Hail                       
+Darkness                   
+Killing of the first born
+""")
+
+write_lines(c, "English", 250, 500, """\
+Dam
+Tzfarde'a
+Kinim
+Arov
+Dever
+Sh'khin
+Barad
+Arbeh
+Hoshekh
+Makat Bekhorot
+""")
+
+write_lines(c, "Hebrew", 100, 350, """\
+רַבִּי יְהוּדָה הָיָה נוֹתֵן בָּהֶם סִמָּנִים: דְּצַ"ךְ עַדַ"שׁ בְּאַחַ"ב. 
+""")
+
+write(c, "English", 50, 325, "Rabbi Yehuda haya noten bahem simanim: datzakh adash b'akhav")
+
+write_lines(c, "English", 50, 300, """\
+Rabbi Yehuda was accustomed to giving mnemonics:
+Detsakh, Adash, Beachav.""")
+
 
 c.showPage()
 

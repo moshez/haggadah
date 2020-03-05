@@ -9,3 +9,6 @@ def write_multi(canvas, language, x, y, lines):
     for idx, line in enumerate(lines):
         height = y - (idx * 14)
         write(canvas, language, x, height, line)
+
+def write_lines(canvas, language, x, y, text):
+    write_multi(canvas, language, x, y, text.splitlines())
