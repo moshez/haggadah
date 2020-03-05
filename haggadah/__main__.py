@@ -10,7 +10,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 from bidi import algorithm
 
-pdfmetrics.registerFont(TTFont('Hebrew', 'ShlomoSemiStam.ttf'))
+pdfmetrics.registerFont(TTFont('Hebrew', 'LinuxLibertine.ttf'))
 pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
 
 c = canvas.Canvas(sys.argv[1])
