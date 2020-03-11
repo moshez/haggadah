@@ -1,3 +1,6 @@
+.. image:: https://circleci.com/gh/moshez/haggadah.svg?style=svg
+    :target: https://circleci.com/gh/moshez/haggadah
+
 Note that ShlomoSemiStam is from Aharonium_
 and distributed under the Open Font License.
 
