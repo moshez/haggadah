@@ -178,18 +178,191 @@ Detsakh, Adash, Beachav.""")
 
 c.showPage()
 
-c.drawString(200, 800, "Three Things")
+write(c, "English", 200, 800, "Three Things")
+
+write_lines(c, "Hebrew", 100, 750,
+"""\
+רַבָּן גַּמְלִיאֵל הָיָה אוֹמֵר: כָּל שֶׁלֹּא אָמַר שְׁלשָׁה דְּבָרִים אֵלּוּ בַּפֶּסַח,
+ לא יָצָא יְדֵי חוֹבָתוֹ, וְאֵלּוּ הֵן: פֶּסַח, מַצָּה, וּמָרוֹר.
+""")
+
+write_lines(c, "English", 100, 700,
+"""\
+Rabban Gamliel haya omer:
+kol sh'lo amar shlosha d'varim elu b'pesach,
+lo yatza y'dei khovato, v'elu hen:
+pesach, matza, u'maror
+""")
+
+
+write_lines(c, "English", 100, 600,
+"""\
+Rabban Gamliel was accustomed to say,
+Anyone who has not said these three things on Pesach has not 
+fulfilled his obligation, and these are them:
+the Pesach sacrifice, matsa and marror. 
+""")
 
 c.showPage()
 
-c.setFont("Hebrew", 14)
+write(c, "Hebrew", 200, 800,  "בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם")
 
-c.drawString(200, 800,  algorithm.get_display("בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם"))
+write_lines(c, "Hebrew", 350, 750,
+"""\
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+הָיְתָה יְהוּדָה לְקָדְשׁוֹ,
+יִשְׂרָאֵל מַמְשְׁלוֹתָיו.
+הַיָּם רָאָה וַיַּנֹס,
+הַיַּרְדֵּן יִסֹּב לְאָחוֹר.
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+הֶהָרִים רָקְדוּ כְאֵילִים,
+גְּבַעוֹת כִּבְנֵי צֹאן.
+מַה לְּךָ הַיָּם כִּי תָנוּס,
+הַיַּרְדֵּן – תִּסֹּב לְאָחוֹר,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+הֶהָרִים – תִּרְקְדוּ כְאֵילִים,
+גְּבַעוֹת כִּבְנֵי־צֹאן.
+מִלְּפְנֵי אָדוֹן חוּלִי אָרֶץ, מִלְּפְנֵי אֱלוֹהַ יַעֲקֹב.
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+מִלְּפְנֵי אָדוֹן חוּלִי אָרֶץ, מִלְּפְנֵי אֱלוֹהַ יַעֲקֹב.
+הַהֹפְכִי הַצּוּר אֲגַם־מָיִם, חַלָּמִיש לְמַעְיְנוֹ־מָיִם.
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+בְּצֵאת יִשְׂרָאֵל מִמִצְרַיִם, בֵּית יַעֲקֹב מֵעַם לֹעֵז,
+""")
+
+write_lines(c, "English", 50, 750,
+"""\
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+Hayta yehuda lkodsho,
+Yisrael mamshelotav
+Hayam ra'a vayanos
+Hayarden yisov l'akhor
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+He'harim rakdu k'elim
+G'va'ot ki'vnei tzon
+Ma lekha hayam ki tanus
+Hayarden -- tisov l'akhor
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+Heharim tirkedu kh'elim
+G'vaot ki'vnei tzon
+Milifnei adon huli aretz
+Milifnei eloha yaacov
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+Milifnei adon huli aretz
+Milifnei eloha yaacov
+Hahofkhi hatzur agam mayim
+Halamish l'mayno mayim
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+B'tset yisrael mi'mitzrayim,
+beit yaacov m'am loez
+""")
+
+write_lines(c, "English", 300, 400,
+"""\
+In Israel's going out from Egypt,
+the house of Ya'akov
+from a people of foreign speech.
+The Sea saw and fled,
+the Jordan turned to the rear.
+The mountains danced like rams,
+the hills like young sheep.
+What is happening to you,
+O Sea, that you are fleeing,
+O Jordan that you turn to the rear;
+O mountains that you dance like rams,
+O hills like young sheep?
+From before the Master, tremble O earth,
+from before the Lord of Ya'akov.
+He who turns the boulder into a
+pond of water,
+the flint into a spring of water.
+""")
 
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("קַדֵּשׁ"))
+write(c, "Hebrew", 200, 800,  "קַדֵּשׁ")
+
+write(c, "Hebrew", 100, 750, "מוזגים כוס ראשון. המצּות מכוסות.")
+write(c, "English", 100, 725, "We pour the first cup.")
+
+write_lines(c, "Hebrew", 100, 700,
+"""\
+סַבְרִי מָרָנָן וְרַבָּנָן וְרַבּוֹתַי.
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
+""")
+
+write_lines(c, "English", 100, 650,
+"""\
+Blessed are You, Lord our God,
+King of the universe,
+who creates the fruit of the vine.
+""")
+
+write_lines(c, "Hebrew", 100, 600,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלהֵינוּ מֶלֶךְ הָעוֹלָם
+אֲשֶׁר בָּחַר בָּנוּ מִכָּל־עָם וְרוֹמְמָנוּ מִכָּל־לָשׁוֹן וְקִדְּשָׁנוּ בְּמִצְוֹתָיו.
+וַתִּתֶּן לָנוּ ה' אֱלֹהֵינוּ בְּאַהֲבָה מוֹעֲדִים לְשִׂמְחָה,
+חַגִּים וּזְמַנִּים לְשָׂשוֹן,
+אֶת יוֹם חַג הַמַּצּוֹת הַזֶּה זְמַן חֵרוּתֵנוּ,
+מִקְרָא קֹדֶשׁ זֵכֶר לִיצִיאַת מִצְרָיִם.
+כִּי בָנוּ בָחַרְתָּ וְאוֹתָנוּ קִדַּשְׁתָּ מִכָּל הָעַמִּים,
+וּמוֹעֲדֵי קָדְשֶׁךָ בְּשִׂמְחָה וּבְשָׂשוֹן הִנְחַלְתָּנוּ.
+""")
+
+write_lines(c, "English", 100, 450,
+"""\
+Blessed are You, Lord our God,
+King of the universe,
+who has chosen us from all peoples and
+has raised us above all tongues and has
+sanctified us with His commandments.
+And You have given us, Lord our God,
+appointed times for happiness,
+holidays and special times for joy,
+this Festival of Matsot,
+our season of freedom a holy convocation
+in memory of the Exodus from Egypt.
+For You have chosen us and sanctified us
+above all peoples.
+In Your gracious love,
+You granted us Your special times for
+happiness and joy.
+""")
+
+write_lines(c, "Hebrew", 100, 200,
+"""\
+בָּרוּךְ אַתָּה ה', מְקַדֵּשׁ יִשְׂרָאֵל וְהַזְּמַנִּים.
+""")
+
+write_lines(c, "English", 100, 175,
+"""\
+Blessed are You, O Lord, who sanctifies Israel,
+and the appointed times.
+""")
+
+write_lines(c, "English", 100, 125,
+"""\
+Drink while reclining to the left and do not
+recite a blessing after drinking.
+""")
 
 c.showPage()
 
