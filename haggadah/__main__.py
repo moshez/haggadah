@@ -366,14 +366,109 @@ recite a blessing after drinking.
 
 c.showPage()
 
-c.setFont("English", 14)
+write(c, "English", 200, 800, "Magid: Second cup of wine")
 
-c.drawString(200, 800, "Magid: Second cup of wine")
+write_lines(c, "English", 50, 725,
+"""\
+We raise the cup until we reach "who redeemed Israel"
+""")
+
+write_lines(c, "Hebrew", 200, 700,
+"""\
+בָּרוּךְ אַתָּה ה' אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם,
+אֲשֶׁר גְּאָלָנוּ וְגָאַל אֶת־אֲבוֹתֵינוּ מִמִּצְרַיִם,
+וְהִגִּיעָנוּ הַלַּיְלָה הַזֶּה לֶאֱכָל־בּוֹ מַצָּה וּמָרוֹר.
+כֵּן ה' אֱלֹהֵינוּ וֵאלֹהֵי אֲבוֹתֵינוּ יַגִּיעֵנוּ
+לְמוֹעֲדִים וְלִרְגָלִים אֲחֵרִים הַבָּאִים לִקְרָאתֵנוּ לְשָׁלוֹם,
+שְׂמֵחִים בְּבִנְיַן עִירֶךְ וְשָׂשִׂים בַּעֲבוֹדָתֶךָ.
+וְנֹאכַל שָׁם מִן הַזְּבָחִים וּמִן הַפְּסָחִים אֲשֶׁר יַגִּיעַ דָּמָם עַל קִיר מִזְבַּחֲךָ לְרָצון,
+וְנוֹדֶה לְךָ שִׁיר חָדָש עַל גְּאֻלָּתֵנוּ וְעַל פְּדוּת נַפְשֵׁנוּ.
+בָּרוּךְ אַתָּה ה', גָּאַל יִשְׂרָאֵל.
+""")
+
+write_lines(c, "English", 50, 550,
+"""\
+Baruch attah adonai eloheinu melekh ha'olam
+Asher ga'alanu v'ga'al at avoteinu mimitzrayim
+v'higi'anu halayla hazeh le'ekhol bo matzah u'maror
+Ken adonai eloheinu v'elohei avoteinu yagi'einu
+l'moadim u'lrgalim aherim haba'im likrateinu l'shalom
+smehim b'vinyan hirkha v'sassim b'avodatkha
+v'nokhal sham min hazvahim u'min hapsahim
+asher yagi'a damam al kir mizbeha lratzon
+v'node l'kha shir hadash al g'eulateinu v'al pdut nafshenu
+Barush attah adonai, ga'al yisrael
+""")
+
+write_lines(c, "English", 50, 400,
+"""\
+Blessed are You, Lord our God,
+King of the universe, who redeemed us and 
+redeemed our ancestors from Egypt, 
+and brought us on this night to eat matsa and marror; 
+so too, Lord our God, and God of our ancestors, 
+bring us to other appointed times and holidays that 
+will come to greet us in peace, joyful in the building of 
+Your city and happy in Your worship; 
+that we shall eat there from the offerings and from the 
+Pesach sacrifices, the blood of which shall reach the 
+wall of Your altar for favor, and we shall thank You 
+with a new song upon our redemption and upon the restoration 
+of our souls. 
+Blessed are you, Lord, who redeemed Israel.
+""")
+
+
+write_lines(c, "English", 50, 175,
+"""\
+We say the blessing below and drink the cup while reclining to the left
+""")
+
+write_lines(c, "Hebrew", 200, 150,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
+""")
+
+write_lines(c, "English", 50, 125,
+"""\
+Barukh attah adonai, eloheinu melekh ha'olam, boreh pri hagafen
+"""
+)
+
+write_lines(c, "English", 50, 100,
+"""\
+Blessed are You, Lord our God, who creates the fruit of the vine. 
+""")
 
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("רָחְצָה"))
+write(c, "Hebrew", 200, 800, "רָחְצָה")
+
+write_lines(c, "English", 50, 750,
+"""\
+We wash the hands and make the blessing.
+""")
+
+write_lines(c, "Hebrew", 200, 725,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ עַל נְטִילַת יָדַיִם.
+""")
+
+write_lines(c, "English", 50, 700,
+"""\
+Barukh atta adonai, eloheinu melekh ha'olam,
+Asher kidshanu b'mitzvotav v'tsivanu al
+ntilat yada'im
+"""
+)
+
+write_lines(c, "English", 50, 650,
+"""\
+Blessed are You, Lord our God, King of the Universe,
+who has sanctified us with His commandments and has commanded us
+on the washing of the hands.
+""")
+
 c.showPage()
 
 c.setFont("Hebrew", 14)
