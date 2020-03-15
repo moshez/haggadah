@@ -471,22 +471,121 @@ on the washing of the hands.
 
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("מוֹצִיא מַצָּה"))
+write(c,"English", 200, 800,  "Motzi Matzah")
+
+write_lines(c, "English", 50, 750,
+"""\
+He takes out the matsa in the order that he placed them,
+the broken one between the two whole ones;
+he holds the three of them in his hand and blesses 
+"ha-motsi" with the intention to take from the top one and
+"on eating matsa" with the intention of eating from the broken one.
+Afterwards, he breaks off a kazayit from the top whole one and a second
+kazayit from the broken one and he dips them into salt and eats both 
+while reclining.
+""")
+
+write_lines(c, "Hebrew", 200, 600,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם הַמּוֹצִיא לֶחֶם מִן הָאָרֶץ.
+""")
+
+write_lines(c, "English", 50, 575,
+"Barukh attah adonai, eloheinu melekh ha'olam, hamotzi lekhem min ha'aretz")
+
+write_lines(c, "English", 50, 550,
+"""\
+Blessed are You, Lord our God, King of the Universe,
+who brings forth bread from the ground.
+""")
+
+write_lines(c, "Hebrew", 200, 500,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו וְצִוָּנוּ עַל אֲכִילַת מַצָּה.
+""")
+
+write_lines(c, "English", 50, 475,
+"""\
+Barukh attah adonai, eloheinu melekh ha'olam, asher kidshanu b'mitzvotav
+v'tzivanu al akhilat matzah""")
+
+write_lines(c, "English", 50, 425,
+"""\
+Blessed are You, Lord our God, King of the Universe, who has
+sanctified us with His commandments and has commanded us on the
+eating of matsa. 
+""")
+
+
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("מָרוֹר"))
+write(c, "English", 200, 800, "Maror")
+
+write_lines(c, "English", 50, 750,
+"""\
+All present should take a kazayit of marror, dip into the haroset,
+shake off the haroset, make the blessing and eat without reclining.
+""")
+
+write_lines(c, "Hebrew", 50, 700,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָנוּ בְּמִצְוֹתָיו וְצִוָּנוּ עַל אֲכִילַת מָרוֹר.
+""")
+
+write_lines(c, "English", 50, 675,
+"""\
+Barukh attah adonai, eloheinu melekh ha'olam, asher kidshanu b'mitzvotav
+v'tzivanu al akhilat maror""")
+
+write_lines(c, "English", 50, 625,
+"""\
+Blessed are You, Lord our God, King of the Universe, who has
+sanctified us with His commandments and has commanded us on
+the eating of marror. 
+""")
+
 c.showPage()
 
+write(c, "English", 200, 800, "Korekh")
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("כּוֹרֵךְ"))
+write_lines(c, "English", 50, 750,
+"""\
+All present should take a kazayit from the third whole
+matsa with a kazayit of marror, wrap them together and eat
+them while reclining and without saying a blessing.
+Before he eats it, he should say:
+""")
+
+write_lines(c, "Hebrew", 200, 650,
+"""\
+זֵכֶר לְמִקְדָּשׁ כְּהִלֵּל. כֵּן עָשָׂה הִלֵּל בִּזְמַן שֶׁבֵּית הַמִּקְדָּשׁ הָיָה קַיָּם:
+הָיָה כּוֹרֵךְ מַצָּה וּמָרוֹר וְאוֹכֵל בְּיַחַד, לְקַיֵּם מַה שֶּׁנֶּאֱמַר: עַל מַצּוֹת וּמְרוׂרִים יֹאכְלֻהוּ.
+""")
+
+write_lines(c, "English", 50, 600,
+"""\
+Zekher lamikdash k'Hillel.
+Ken 'asah Hillel b'zman sh'beit hamikdash haya kayam:
+Hayah korekh matzah u'maror v'okhel b'yahad, lekayem mah sh'ne'emar:
+Al matzot u'mrorim yokhluhu
+""")
+
+write_lines(c, "English", 50, 525,
+"""\
+In memory of the Temple according to Hillel.
+This is what Hillel would do when the
+Temple existed:
+He would wrap the matsa and marror and eat them together,
+in order to fulfill what is stated, (Exodus 12:15): 
+"You should eat it upon matsot and marrorim."
+""")
+
 c.showPage()
 
+write(c, "English", 200, 800, "Shulkhan 'Orekh")
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("שֻׁלְחָן עוֹרֵךְ"))
+write(c, "English", 50, 750, "We eat and drink")
+
 c.showPage()
 
 
