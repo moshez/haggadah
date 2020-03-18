@@ -588,13 +588,196 @@ write(c, "English", 50, 750, "We eat and drink")
 
 c.showPage()
 
+write(c, "English", 200, 800, "Tzafun")
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("צָפוּן"))
+write_lines(c, "English", 50, 750,
+"""\
+After the end of the meal, all those present take a kazayit 
+from the matsa, that was concealed for the afikoman, and eat a 
+kazayit from it while reclining.
+
+Before eating the afikoman, he should say: 
+"In memory of the Pesach sacrifice that was 
+eaten upon being satiated." 
+""")
+
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("בָּרֵךְ"))
+
+write(c, "English", 200, 800, "Barekh")
+
+write_lines(c, "Hebrew", 375, 750,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם,
+הַזָּן אֶת הָעוֹלָם כֻּלּוֹ בְּטוּבוֹ בְּחֵן בְּחֶסֶד
+וּבְרַחֲמִים, הוּא נוֹתֵן לֶחֶם לְכָל בָּשָׂר
+כִּי לְעוֹלָם חַסְדוֹ. וּבְטוּבוֹ הַגָּדוֹל תָּמִיד
+לֹא חָסַר לָנוּ, וְאַל יֶחְסַר לָנוּ מָזוֹן לְעוֹלָם וָעֶד.
+בַּעֲבוּר שְׁמוֹ הַגָּדוֹל,
+כִּי הוּא אֵל זָן וּמְפַרְנֵס לַכֹּל וּמֵטִיב לַכֹּל,
+וּמֵכִין מָזוֹן לְכָל בְּרִיּוֹתָיו אֲשֶׁר בָּרָא.
+בָּרוּךְ אַתָּה ה', הַזָּן אֶת הַכֹּל.
+""")
+
+write_lines(c, "English", 50, 750,
+"""\
+Ba-ruch a-tah A-do-nai, E-lo-hei-nu 
+Me-lech Ha-o-lam, Ha-zan et ha-o-lam
+ku-lo, b'tu-vo, b'chein b'che-sed
+uv-ra-cha-mim, hu no-tein le-chem l'chawl
+ba-sar, ki l'o-lam chas-do. Uv-tu-vo ha-ga-dol
+i-ma-nu, ta-mid lo cha-seir la-nu, v'al yech-sar
+la-nu, ma-zon l'o-lam va-ed. Ba-a-vur sh'mo
+ha-ga-dol, ki hu Eil zan um-far-neis la-kol,
+u-mei-tiv la-kol, u-mei-chin ma-zon
+l'chawl b'ri-yo-tav a-sher ba-ra.
+Ka-a-mur: Po-tei-ach et ya-de-cha, u-mas-bi-a
+l'chawl chai ra-tson. Ba-ruch a-tah A-do-nai,
+ha-zan et ha-kol. (A-mein. )
+"""
+)
+
+write_lines(c, "English", 50, 550,
+"""\
+Blessed are You, Lord our God, King of the Universe, who nourishes
+the entire world in His goodness, in grace, in kindness and in mercy;
+He gives bread to all flesh since His kindness is forever. And in His great
+goodness, we always have not lacked, and may we not lack nourishment
+forever and always, because of His great name. Since He is a Power that
+feeds and provides for all and does good to all and prepares nourishment 
+for all of his creatures that he created. Blessed are You, Lord,
+who sustains all. 
+""")
+
+write_lines(c, "English", 50, 350,
+"""\
+No-deh l'cha
+A-do-nai E-lo-hei-nu,
+al she-hin-chal-ta la-a-vo-tei-nu
+e-rets chem-dah to-vah ur-cha-vah.
+V'al she-ho-tsei-ta-nu
+A-do-nai E-lo-hei-nu
+mei-e-rets mits-ra-yim,
+uf-di-ta-nu mi-beit a-va-dim,
+v'al b'ri-t'cha she-cha-tam-ta biv-sa-rei-nu,
+v'al to-ra-t'cha she-li-mad-ta-nu,
+v'al chu-ke-cha she-ho-da-ta-nu,
+v'al chai-yim chein va-che-sed
+she-cho-nan-ta-nu, v'al a-chi-lat ma-zon 
+sha-a-tah zan um-far-neis o-ta-nu ta-mid,
+b'chawl yom uv-chawl eit uv-chawl sha-ah.
+""")
+
+write_lines(c, "Hebrew", 300, 350,
+"""\
+נוֹדֶה לְךָ ה' אֱלֹהֵינוּ עַל
+שֶׁהִנְחַלְתָּ לַאֲבוֹתֵינוּ אֶרֶץ חֶמְדָה טוֹבָה וּרְחָבָה,
+וְעַל שֶׁהוֹצֵאתָנוּ ה' אֱלֹהֵינוּ מֵאֶרֶץ מִצְרַיִם,
+וּפְדִיתָנוּ מִבֵּית עֲבָדִים,
+וְעַל בְּרִיתְךָ שֶׁחָתַמְתָּ בְּבְשָׂרֵנוּ, וְעַל תּוֹרָתְךָ שֶׁלִּמַּדְתָּנוּ,
+וְעַל חֻקֶּיךָ שֶׁהוֹדַעְתָּנוּ, וְעַל חַיִּים חֵן וָחֶסֶד שֶׁחוֹנַנְתָּנוּ,
+וְעַל אֲכִילַת מָזוֹן שָׁאַתָּה זָן וּמְפַרְנֵס אוֹתָנוּ תָּמִיד,
+בְּכָל יוֹם וּבְכָל עֵת וּבְכָל שָׁעָה:
+""")
+
+write_lines(c, "English", 50, 125,
+"""\
+We thank you, Lord our God, that you have given as an inheritance
+to our ancestors a lovely, good and broad land, and that You took us out, 
+Lord our God, from the land of Egypt and that You redeemed us from a 
+house of slaves, and for Your covenant which You have sealed in our flesh, 
+and for Your Torah that You have taught us, and for Your statutes which You 
+have made known to us, and for life, grace and kindness that You have
+granted  us and for the eating of nourishment that You feed and provide for
+us always, on all days, and at all times and in every hour. 
+""")
+
+
+c.showPage()
+
+write_lines(c, "English", 50, 750,
+"""\
+V'al ha-kol A-do-nai E-lo-hei-nu
+a-nach-nu mo-dim lach, um-va-r'chim
+o-tach, yit-ba-reich shim-cha b'fi
+kawl chai ta-mid l'o-lam va-ed.
+Ka-ka-tuv: v'a-chal-ta v'sa-va-ta,
+u-vei-rach-ta et A-do-nai E-lo-he-cha,
+al ha-a-rets ha-to-vah a-sher na-tan lach.
+Ba-ruch a-tah A-do-nai,
+al ha-a-rets v'al ha-ma-zon.
+""")
+
+write_lines(c, "Hebrew", 375, 750,
+"""\
+וְעַל הַכּל ה' אֱלֹהֵינוּ, 
+אֲנַחְנוּ מוֹדִים לָךְ וּמְבָרְכִים
+אוֹתָךְ, יִתְבָּרַךְ שִׁמְךָ בְּפִי כָּל חַי 
+תָּמִיד לְעוֹלָם וָעֶד. כַּכָּתוּב:
+וְאָכַלְתָּ וְשָׂבַעְתָּ וּבֵרַכְתָּ אֶת ה'
+אֱלֹהֵיךָ עַל הָאָרֶץ הַטּוֹבָה אֲשֶּׁר נָתַן לָךְ.
+בָּרוּךְ אַתָּה ה', עַל הָאָרֶץ וְעַל הַמָּזוֹן:
+""")
+
+write_lines(c, "English", 50, 600,
+"""\
+And for everything, Lord our God, we thank You and bless You;
+may Your name be blessed by the mouth of all life, constantly
+forever and always, as it is written; "And you shall eat and
+you shall be satiated and you shall bless the Lord your God
+for the good land that He has given you."
+Blessed are You, Lord, for the land and for the nourishment. 
+""")
+
+write_lines(c, "English", 50, 450,
+"""\
+Ra-cheim A-do-nai E-lo-hei-nu al Yis-ra-eil
+a-me-cha, v'al Y'ru-sha-la-yim i-re-cha,
+v'al Tsi-yon mish-kan k'vo-de-cha,
+v'al mal-chut beit Da-vid m'shi-che-cha,
+v'al ha-ba-yit ha-ga-dol v'ha-ka-dosh
+she-nik-ra shim-cha a-lav. E-lo-hei-nu
+A-vi-nu r'ei-nu zo-nei-nu par-n'sei-nu
+v'chal-k'lei-nu v'har-vi-chei-nu,
+v'har-vach la-nu A-do-nai E-lo-hei-nu
+m'hei-rah mi-kawl tsa-ro-tei-nu.
+V'na al tats-ri-chei-nu A-do-nai E-lo-hei-nu,
+lo li-dei ma-t'nat ba-sar v'dam,
+v'lo li-dei hal-va-a-tam,
+ki im l'ya-d'cha ha-m'lei-ah ha-p'tu-chah ha-k'do-shah
+v'ha-r'cha-vah, she-lo nei-vosh v'lo ni-ka-leim
+l'o-lam va-ed.
+"""
+)
+
+write_lines(c, "Hebrew", 350, 450,
+"""\
+רַחֵם נָא ה' אֱלֹהֵינוּ עַל יִשְׂרָאַל עַמֶּךָ וְעַל 
+יְרוּשָׁלַיִם עִירֶךָ וְעַל צִיּוֹן מִשְׁכַּן כְּבוֹדֶךָ
+ וְעַל מַלְכוּת בֵּית דָּוִד מְשִׁיחֶךָ וְעַל הַבַּיִת
+ הַגָּדוֹל וְהַקָּדוֹשׁ שֶׁנִּקְרָא שִׁמְךָ עָלָיו: אֱלֹהֵינוּ אָבִינוּ,
+ רְעֵנוּ זוּנֵנוּ פַרְנְסֵנוּ וְכַלְכְּלֵנוּ וְהַרְוִיחֵנוּ,
+ וְהַרְוַח לָנוּ ה' אֱלֹהֵינוּ מְהֵרָה מִכָּל צָרוֹתֵינוּ.
+ וְנָא אַל תַּצְרִיכֵנוּ ה' אֱלֹהֵינוּ,
+ לֹא לִידֵי מַתְּנַת בָּשָׂר וָדָם וְלֹא לִידֵי הַלְוָאתָם,
+ כִּי אִם לְיָדְךָ הַמְּלֵאָה הַפְּתוּחָה הַקְּדוֹשָׁה וְהָרְחָבָה,
+ שֶׁלֹא נֵבוֹשׁ וְלֹא נִכָּלֵם לְעוֹלָם וָעֶד.
+""")
+
+write_lines(c, "English", 50, 200,
+"""
+Please have mercy, Lord our God, upon Israel, Your people;
+and upon Jerusalem, Your city; and upon Zion, the dwelling
+place of Your Glory; and upon the monarchy of the House of David,
+Your appointed one; and upon the great and holy house that
+Your name is called upon. Our God, our Father, tend us, sustain us,
+provide for us, relieve us and give us quick relief, Lord our God,
+from all of our troubles. And please do not make us needy, 
+Lord our God, not for the gifts of flesh and blood, and not for 
+their loans, but rather from Your full, open, holy and broad hand, 
+so that we not be embarrassed and we not be ashamed forever and always. 
+""")
+
 c.showPage()
 
 c.setFont("Hebrew", 14)
