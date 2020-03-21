@@ -894,73 +894,160 @@ good; and may we not lack any good ever.
 
 c.showPage()
 
-"""
-Ha-ra-cha-man, hu yim-loch a-lei-nu l'o-lam va-ed.
-Ha-ra-cha-man,hu yit-ba-reich ba-sha-ma-yim u-va-a-rets.
-Ha-ra-cha-man, hu yish-ta-bach l'dor do-rim,
-v'yit-pa-eir ba-nu la-ad ul-nei-tsach n'tsa-chim,
-v'yit-ha-dar ba-nu la-ad ul-ol-mei o-la-mim.
-Ha-ra-cha-man, hu y'far-n'sei-nu b'cha-vod.
-Ha-ra-cha-man, hu yish-bor ol hago-yim mei-al tsa-va-rei-nu,
+write_lines(c, "English", 50, 750,
+"""\
+Ha-ra-cha-man, hu yim-loch a-lei-nu
+l'o-lam va-ed. Ha-ra-cha-man,hu
+yit-ba-reich ba-sha-ma-yim u-va-a-rets.
+Ha-ra-cha-man, hu yish-ta-bach l'dor
+do-rim, v'yit-pa-eir ba-nu la-ad
+ul-nei-tsach n'tsa-chim, v'yit-ha-dar
+ba-nu la-ad ul-ol-mei o-la-mim. 
+Ha-ra-cha-man, hu y'far-n'sei-nu
+b'cha-vod. Ha-ra-cha-man, hu yish-bor
+ol hago-yim mei-al tsa-va-rei-nu,
 v'hu yo-li-chei-nu ko-m'mi-yut l'ar-tsei-nu.
-Ha-ra-cha-man, hu yish-lach b'ra-chah m'ru-bah b'-va-yit zeh,
-v'al shul-chan zeh she-a-chal-nu a-lav.
-Ha-ra-cha-man, hu yish-lach la-nu et Ei-li-ya-hu ha-na-vi,
-za-chur la-tov, vi-va-ser la-nu b'so-rot to-vot,
-y'shu-ot v'ne-cha-mot.
-
-Ha-ra-cha-man,
-hu y'va-reich
-et a-vi mo-ri
-ba-al ha-ba-yit ha-zeh,
-v'et i-mi mo-ra-ti
-ba-a-lat ha-ba-yit ha-zeh,
-o-tam v'et bei-tam v'et zar-am
-v'et kawl a-sher la-hem,
-o-ta-nu v'et kawl a-sher la-nu,
-k'mo she-berach et a-vo-tei-nu
-Av-ra-ham Yits-chak v'Ya-a-kov
-ba-kol mi-kol kol,
-kein y'va-reich o-ta-nu,
-ku-la-nu ya-chad,
-biv-ra-chah sh'lei-mah, v'no-mar a-mein.
+Ha-ra-cha-man, hu yish-lach b'ra-chah
+m'ru-bah b'-va-yit zeh, v'al shul-chan
+zeh she-a-chal-nu a-lav. Ha-ra-cha-man,
+hu yish-lach la-nu et Ei-li-ya-hu ha-na-vi,
+za-chur la-tov, vi-va-ser la-nu b'so-rot
+to-vot, y'shu-ot v'ne-cha-mot.
+Ha-ra-cha-man, hu y'va-reich et ba-al 
+ha-ba-yit ha-zeh, v'et  ba-a-lat ha-ba-yit
+ha-zeh, o-tam v'et bei-tam v'et zar-am v'et
+kawl a-sher la-hem, o-ta-nu v'et kawl
+a-sher la-nu, k'mo she-berach et
+a-vo-tei-nu Av-ra-ham Yits-chak v'Ya-a-kov
+ba-kol mi-kol kol, kein y'va-reich o-ta-nu,
+ku-la-nu ya-chad, biv-ra-chah sh'lei-mah,
+v'no-mar a-mein.
 Be-ma-rom y'lam-du a-lav v'-a-lei-nu
 z'chut, shet-hei l'mish-me-ret sha-lom.
 V'ni-sa v'ra-chah mei-eit A-do-nai,
 uts-da-kah mei-E-lo-hei yish-ei-nu,
-v'nim-tsa chein v'sei-chel tov
-b'ei-nei E-lo-him v'a-dam.
-Ha-ra-cha-man, hu yan-chi-lei-nu l'yom she-ku-lo tov.
-Ha-ra-cha-man, hu y'za-kei-nu li-mot ha-ma-shi-ach
-ul-chai-yei ha-o-lam ha-ba.
-On ordinary days: Mag-dil
-On Shabbat, festivals, and days we don’t say Tachanun: Mig-dol
-y'shu-ot mal-ko
-v'o-seh che-sed lim-shi-cho,
-l'Da-vid ul-zar-o ad o-lam.
-O-seh sha-lom bim-ro-mav,
-hu ya-a-seh sha-lom a-lei-nu
-v'al kawl Yis-ra-eil,
+v'nim-tsa chein v'sei-chel tov b'ei-nei
+E-lo-him v'a-dam. Ha-ra-cha-man,
+hu yan-chi-lei-nu l'yom she-ku-lo tov.
+Ha-ra-cha-man, hu y'za-kei-nu li-mot
+ha-ma-shi-ach ul-chai-yei ha-o-lam ha-ba.
+Mig-dol y'shu-ot mal-ko v'o-seh che-sed
+lim-shi-cho, l'Da-vid ul-zar-o ad o-lam.
+O-seh sha-lom bim-ro-mav, hu ya-a-seh
+sha-lom a-lei-nu v'al kawl Yis-ra-eil,
 v'im-ru a-mein.
-Y'ru et A-do-nai, k'do-shav,
-ki ein mach-sor li-rei-av.
-K'fi-rim ra-shu v'ra-ei-vu,
-v'dor-shei A-do-nai lo yach-s'ru chawl tov.
-Ho-du La-do-nai ki tov,
-ki l'o-lam chas-do.
-Po-tei-ach et ya-de-cha,
+Y'ru et A-do-nai, k'do-shav, ki ein mach-sor li-rei-av.
+K'fi-rim ra-shu v'ra-ei-vu, v'dor-shei A-do-nai lo yach-s'ru
+chawl tov. Ho-du La-do-nai ki tov,
+ki l'o-lam chas-do. Po-tei-ach et ya-de-cha,
 u-mas-bi-a l'chawl chai ra-tson.
 Ba-ruch ha-ge-ver a-sher yiv-tach ba-do-nai,
 v'ha-yah A-do-nai miv-ta-cho.
-"""
+""")
 
-"""
-הָרַחֲמָן הוּא יִמְלוֹךְ עָלֵינוּ לְעוֹלָם וָעֶד. הָרַחֲמָן הוּא יִתְבָּרַךְ בַּשָּׁמַיִם וּבָאָרֶץ. הָרַחֲמָן הוּא יִשְׁתַּבַּח לְדוֹר דּוֹרִים, וְיִתְפָּאַר בָּנוּ לָעַד וּלְנֵצַח נְצָחִים, וְיִתְהַדַּר בָּנוּ לָעַד וּלְעוֹלְמֵי עוֹלָמִים. הָרַחֲמָן הוּא יְפַרְנְסֵנוּ בְּכָבוֹד. הָרַחֲמָן הוּא יִשְׁבּוֹר עֻלֵּנוּ מֵעַל צַּוָּארֵנוּ, וְהוּא יוֹלִיכֵנוּ קוֹמְמִיּוּת לְאַרְצֵנוּ. הָרַחֲמָן הוּא יִשְׁלַח לָנוּ בְּרָכָה מְרֻבָּה בַּבַּיִת הַזֶּה, וְעַל שֻׁלְחָן זֶה שֶׁאָכַלְנוּ עָלָיו. הָרַחֲמָן הוּא יִשְׁלַח לָנוּ אֶת אֵלִיָּהוּ הַנָּבִיא זָכוּר לַטּוֹב, וִיבַשֶּׂר לָנוּ בְּשׂוֹרוֹת טוֹבוֹת יְשׁוּעוֹת וְנֶחָמוֹת. הָרַחֲמָן הוּא יְבָרֵךְ אֶת בַּעֲלִי / אִשְתִּי. הָרַחֲמָן הוּא יְבָרֵךְ אֶת [אָבִי מוֹרִי] בַּעַל הַבַּיִת הַזֶּה. וְאֶת [אִמִּי מוֹרָתִי] בַּעֲלַת הַבַּיִת הַזֶּה, אוֹתָם וְאֶת בֵּיתָם וְאֶת זַרְעָם וְאֶת כָּל אֲשֶׁר לָהֶם. אוֹתָנוּ וְאֶת כָּל אֲשֶׁר לָנוּ, כְּמוֹ שֶׁנִּתְבָּרְכוּ אֲבוֹתֵינוּ אַבְרָהָם יִצְחָק וְיַעֲקֹב בַּכֹּל מִכֹּל כֹּל, כֵּן יְבָרֵךְ אוֹתָנוּ כֻּלָּנוּ יַחַד בִּבְרָכָה שְׁלֵמָה, וְנֹאמַר, אָמֵן. בַּמָּרוֹם יְלַמְּדוּ עֲלֵיהֶם וְעָלֵינוּ זְכוּת שֶׁתְּהֵא לְמִשְׁמֶרֶת שָׁלוֹם. וְנִשָּׂא בְרָכָה מֵאֵת ה', וּצְדָקָה מֵאלֹהֵי יִשְׁעֵנוּ, וְנִמְצָא חֵן וְשֵׂכֶל טוֹב בְּעֵינֵי אֱלֹהִים וְאָדָם. בשבת: הָרַחֲמָן הוּא יַנְחִילֵנוּ יוֹם שֶׁכֻּלּוֹ שַׁבָּת וּמְנוּחָה לְחַיֵּי הָעוֹלָמִים. הָרַחֲמָן הוּא יַנְחִילֵנוּ יוֹם שֶׁכֻּלוֹ טוֹב.[יוֹם שֶׁכֻּלוֹ אָרוּךְ. יוֹם שֶׁצַּדִּיקִים יוֹשְׁבִים וְעַטְרוֹתֵיהֶם בְּרָאשֵׁיהֶם וְנֶהֱנִים מִזִּיו הַשְּׁכִינָה וִיהִי חֶלְקֵינוּ עִמָּהֶם]. הָרַחֲמָן הוּא יְזַכֵּנוּ לִימוֹת הַמָּשִׁיחַ וּלְחַיֵּי הָעוֹלָם הַבָּא. מִגְדּוֹל יְשׁוּעוֹת מַלְכּוֹ וְעֹשֶׂה חֶסֶד לִמְשִׁיחוֹ לְדָוִד וּלְזַרְעוֹ עַד עוֹלָם. עשֶׂה שָׁלוֹם בִּמְרוֹמָיו, הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאַל וְאִמְרוּ, אָמֵן. יִרְאוּ אֶת ה' קְדֹשָׁיו, כִּי אֵין מַחְסוֹר לִירֵאָיו. כְּפִירִים רָשׁוּ וְרָעֵבוּ, וְדֹרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב. הוֹדוּ לַיי כִּי טוֹב כִּי לְעוֹלָם חַסְדּוֹ. פּוֹתֵחַ אֶת יָדֶךָ, וּמַשְׂבִּיעַ לְכָל חַי רָצוֹן. בָּרוּךְ הַגֶּבֶר אֲשֶׁר יִבְטַח בַּיי, וְהָיָה ה' מִבְטַחוֹ. נַעַר הָיִיתִי גַם זָקַנְתִּי, וְלֹא רָאִיתִי צַדִּיק נֶעֱזָב, וְזַרְעוֹ מְבַקֶּשׁ לָחֶם. יי עֹז לְעַמּוֹ יִתֵּן, ה' יְבָרֵךְ אֶת עַמּוֹ בַשָּׁלוֹם.
-"""
+write_lines(c, "Hebrew", 350, 750,
+"""\
+הָרַחֲמָן הוּא יִמְלוֹךְ עָלֵינוּ לְעוֹלָם וָעֶד.
+ הָרַחֲמָן הוּא יִתְבָּרַךְ בַּשָּׁמַיִם וּבָאָרֶץ.
+ הָרַחֲמָן הוּא יִשְׁתַּבַּח לְדוֹר דּוֹרִים,
+ וְיִתְפָּאַר בָּנוּ לָעַד וּלְנֵצַח נְצָחִים,
+ וְיִתְהַדַּר בָּנוּ לָעַד וּלְעוֹלְמֵי עוֹלָמִים. הָרַחֲמָן הוּא יְפַרְנְסֵנוּ בְּכָבוֹד.
+ הָרַחֲמָן הוּא יִשְׁבּוֹר עֻלֵּנוּ מֵעַל צַּוָּארֵנוּ,
+ וְהוּא יוֹלִיכֵנוּ קוֹמְמִיּוּת לְאַרְצֵנוּ. הָרַחֲמָן הוּא יִשְׁלַח לָנוּ
+ בְּרָכָה מְרֻבָּה בַּבַּיִת הַזֶּה, וְעַל שֻׁלְחָן זֶה שֶׁאָכַלְנוּ עָלָיו.
+ הָרַחֲמָן הוּא יִשְׁלַח לָנוּ אֶת אֵלִיָּהוּ הַנָּבִיא זָכוּר לַטּוֹב,
+ וִיבַשֶּׂר לָנוּ בְּשׂוֹרוֹת טוֹבוֹת יְשׁוּעוֹת וְנֶחָמוֹת.
+ הָרַחֲמָן הוּא יְבָרֵךְ אֶת אִשְתִּי.
+ הָרַחֲמָן הוּא יְבָרֵךְ אֶת
+ בַּעַל הַבַּיִת הַזֶּה. וְאֶת בַּעֲלַת הַבַּיִת הַזֶּה,
+ אוֹתָם וְאֶת בֵּיתָם וְאֶת זַרְעָם וְאֶת כָּל אֲשֶׁר לָהֶם.
+ אוֹתָנוּ וְאֶת כָּל אֲשֶׁר לָנוּ, כְּמוֹ שֶׁנִּתְבָּרְכוּ
+ אֲבוֹתֵינוּ אַבְרָהָם יִצְחָק וְיַעֲקֹב בַּכֹּל מִכֹּל כֹּל,
+ כֵּן יְבָרֵךְ אוֹתָנוּ כֻּלָּנוּ יַחַד בִּבְרָכָה שְׁלֵמָה,
+ וְנֹאמַר, אָמֵן. בַּמָּרוֹם יְלַמְּדוּ עֲלֵיהֶם
+ וְעָלֵינוּ זְכוּת שֶׁתְּהֵא לְמִשְׁמֶרֶת שָׁלוֹם.
+ וְנִשָּׂא בְרָכָה מֵאֵת ה', וּצְדָקָה מֵאלֹהֵי יִשְׁעֵנוּ,
+ וְנִמְצָא חֵן וְשֵׂכֶל טוֹב בְּעֵינֵי אֱלֹהִים וְאָדָם.
+ הָרַחֲמָן הוּא יְזַכֵּנוּ לִימוֹת הַמָּשִׁיחַ
+ וּלְחַיֵּי הָעוֹלָם הַבָּא. מִגְדּוֹל יְשׁוּעוֹת מַלְכּוֹ
+ וְעֹשֶׂה חֶסֶד לִמְשִׁיחוֹ לְדָוִד וּלְזַרְעוֹ עַד עוֹלָם.
+ עשֶׂה שָׁלוֹם בִּמְרוֹמָיו, הוּא יַעֲשֶׂה שָׁלוֹם
+ עָלֵינוּ וְעַל כָּל יִשְׂרָאַל וְאִמְרוּ, אָמֵן.
+ יִרְאוּ אֶת ה' קְדֹשָׁיו,
+ כִּי אֵין מַחְסוֹר לִירֵאָיו. כְּפִירִים רָשׁוּ וְרָעֵבוּ,
+ וְדֹרְשֵׁי ה' לֹא יַחְסְרוּ כָל טוֹב.
+ הוֹדוּ לַיי כִּי טוֹב כִּי לְעוֹלָם חַסְדּוֹ.
+ פּוֹתֵחַ אֶת יָדֶךָ, וּמַשְׂבִּיעַ לְכָל חַי רָצוֹן.
+ בָּרוּךְ הַגֶּבֶר אֲשֶׁר יִבְטַח בַּיי, וְהָיָה ה' מִבְטַחוֹ.
+ נַעַר הָיִיתִי גַם זָקַנְתִּי, וְלֹא רָאִיתִי צַדִּיק נֶעֱזָב,
+ וְזַרְעוֹ מְבַקֶּשׁ לָחֶם. יי עֹז לְעַמּוֹ יִתֵּן,
+ ה' יְבָרֵךְ אֶת עַמּוֹ בַשָּׁלוֹם.
+""")
 
-"""
-May the Merciful One reign over us forever and always. May the Merciful One be blessed in the heavens and in the earth. May the Merciful One be praised for all generations, and exalted among us forever and ever, and glorified among us always and infinitely for all infinities. May the Merciful One sustain us honorably. May the Merciful One break our yolk from upon our necks and bring us upright to our land. May the Merciful One send us multiple blessing, to this home and upon this table upon which we have eaten. May the Merciful One send us Eliyahu the prophet - may he be remembered for good - and he shall announce to us tidings of good, of salvation and of consolation. May the Merciful One bless my husband/my wife. May the Merciful One bless [my father, my teacher,] the master of this home and [my mother, my teacher,] the mistress of this home, they and their home and their offspring and everything that is theirs. Us and all that is ours; as were blessed Avraham, Yitschak and Ya'akov, in everything, from everything, with everything, so too should He bless us, all of us together, with a complete blessing and we shall say, Amen. From above, may they advocate upon them and upon us merit, that should protect us in peace; and may we carry a blessing from the Lord and charity from the God of our salvation; and find grace and good understanding in the eyes of God and man. [On Shabbat, we say: May the Merciful One give us to inherit the day that will be completely Shabbat and rest in everlasting life.] May the Merciful One give us to inherit the day that will be all good. [The day that is all long, the day that the righteous will sit and their crowns will be on their heads and they will enjoy the radiance of the Divine presence and my our share be with them.] May the Merciful One give us merit for the times of the messiah and for life in the world to come. A tower of salvations is our King; may He do kindness with his messiah, with David and his offspring, forever (II Samuel 22:51). The One who makes peace above, may He make peace upon us and upon all of Israel; and say, Amen. Fear the Lord, His holy ones, since there is no lacking for those that fear Him. Young lions may go without and hunger, but those that seek the Lord will not lack any good thing (Psalms 34:10-11). Thank the Lord, since He is good, since His kindness is forever (Psalms 118:1). You open Your hand and satisfy the will of all living things (Psalms 146:16). Blessed is the man that trusts in the Lord and the Lord is his security (Jeremiah 17:7). I was a youth and I have also aged and I have not seen a righteous man forsaken and his offspring seeking bread (Psalms 37:25). The Lord will give courage to His people. The Lord will bless His people with peace (Psalms 29:11). 
-"""
+c.showPage()
+
+write_lines(c, "English", 50, 750,
+"""\
+May the Merciful One reign over us forever and always.
+May the Merciful One be blessed in the heavens and in the earth.
+May the Merciful One be praised for all generations,
+and exalted among us forever and ever, and glorified among us
+always and infinitely for all infinities. May the Merciful One sustain
+us honorably. May the Merciful One break our yolk from upon our necks and
+bring us upright to our land. May the Merciful One send us multiple blessing,
+to this home and upon this table upon which we have eaten.
+May the Merciful One send us Eliyahu the prophet -
+may he be remembered for good - and he shall announce to us 
+tidings of good,of salvation and of consolation.
+May the Merciful One bless my wife. May the Merciful One bless the
+master of  this home and the mistress of this home, they and their home 
+and their offspringand everything that is theirs. Us and all that is ours;
+as were blessed Avraham, Yitschak and Ya'akov, in everything,
+from everything, with everything,so too should He bless us,
+all of us together, with acomplete blessing and we shall say, Amen.
+From above,may they advocate upon them and upon us merit,
+that should protect us in peace; and may we carry a  blessing from the Lord 
+and charity from the God of our salvation; and find grace and good
+understanding in the eyes of God and man. May the Merciful One give us to
+inherit the day that will be all good. May the Merciful One give us merit for
+the times of the messiah and for life in the world to come. A tower of
+salvations is our King;  may He do kindness with his messiah, with David and
+his offspring, forever. The One who makes peace above, may He make peace
+upon us and upon all of Israel; and say, Amen. Fear the Lord, His holy ones,
+since there isno lacking for those that fear Him. Young lions may go
+without and hunger, but those that seek the Lord will not lack any good thing.
+Thank the Lord, since He is good, since His kindness is forever. You open
+Your hand and satisfy the will of all living things. Blessed is the man that
+trusts in the Lord and the Lord is his security. I was a youth and I have also
+aged and I have not seen a righteous man forsaken and his offspring seeking
+bread. The Lord will give courage to His people.
+The Lord will bless His people with peace. 
+""")
+
+c.showPage()
+
+write(c, "English", 200, 800, "Barekh -- Third Cup")
+
+write_lines(c, "English", 50, 750,
+"""\
+Baruch Attah Ad-nai Eloheinu Melekh
+HaOlam, Boreh Pri HaGafen
+""")
+
+write_lines(c, "Hebrew", 350, 750,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
+""")
+
+write_lines(c, "English", 50, 700,
+"""\
+Blessed are You, Lord our God, King of the universe, who creates
+the fruit of the vine.
+
+We drink while reclining and do not say a blessing afterwards.
+
+We pour the cup for Elijah and open the door.
+""")
 
 c.showPage()
 
