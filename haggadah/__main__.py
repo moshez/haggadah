@@ -1051,13 +1051,178 @@ We pour the cup for Elijah and open the door.
 
 c.showPage()
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("הַלֵּל"))
+write(c, "English", 200, 800, "Hallel")
+
+write_lines(c, "English", 50, 750,
+"""\
+We pour the fourth cup and complete the Hallel 
+""")
+
+write_lines(c, "Hebrew", 375, 725,
+"""\
+הוֹדוּ לַיי כִּי טוֹב כִּי לְעוֹלָם חַסְדּוֹ
+הוֹדוּ לֵאלהֵי הָאֱלהִים כל"ח
+הוֹדוּ לָאֲדֹנֵי הָאֲדֹנִים כל"ח
+לְעֹשֵׂה נִפְלָאוֹת גְדֹלוֹת לְבַדּוֹ כל"ח
+לְעֹשֵׂה הַשָּׁמַיִם בִּתְבוּנָה כל"ח
+לְרוֹקַע הָאָרֶץ עַל הַמָּיִם כל"ח 
+לְעֹשֵׂה אוֹרִים גְּדֹלִים כל"ח 
+אֶת הַשֶּׁמֶשׁ לְמֶמְשֶׁלֶת בַּיּוֹם כל"ח 
+אֶת הַיָּרֵחַ וְכוֹכָבִים לְמֶמְשְׁלוֹת בַּלַּיְלָה כל"ח
+
+לְמַכֵּה מִצְרַיִם בִּבְכוֹרֵיהֶם כל"ח 
+וַיוֹצֵא יִשְׂרָאֵל מִתּוֹכָם כל"ח 
+בְּיָד חֲזָקָה וּבִזְרוֹעַ נְטוּיָה כל"ח 
+לְגֹזֵר יַם סוּף לִגְזָרִים כל"ח 
+וְהֶֶעֱבִיר יִשְׂרָאֵל בְּתוֹכוֹ כל"ח 
+וְנִעֵר פַּרְעֹה וְחֵילוֹ בְיַם סוּף כל"ח 
+לְמוֹלִיךְ עַמּוֹ בַּמִּדְבָּר כל"ח 
+לְמַכֵּה מְלָכִים גְּדֹלִים כל"ח 
+וַיַּהֲרֹג מְלָכִים אַדִּירִים כל"ח 
+לְסִיחוֹן מֶלֶךְ הָאֱמֹרִי כל"ח 
+וּלְעוֹג מֶלֶךְ הַבָּשָׁן כל"ח 
+וָנָתַן אַרְצָם לְנַחֲלָה כל"ח 
+נַחֲלָה לְיִשְׂרָאֵל עַבְדוּ כל"ח 
+שֶׁבְּשִׁפְלֵנוּ זָכַר לָנוּ כל"ח 
+וַיִפְרְקֵנוּ מִצָּרֵינוּ כל"ח
+נֹתֵן לֶחֶם לְכָל בָּשָׂר כל"ח 
+הוֹדוּ לְאֵל הַשָּׁמַיִם כל"ח 
+""")
+
+write_lines(c, "English", 50, 725,
+"""\
+Hodu l’Adonai ki tov, ki l’olam chasdo.
+Hodu lalohei ha’Elohim, k-l-c
+Hodu l’Adonai ha’adonim, k-l-c
+L’oseh nila’ot g’dolot l’vado, k-l-c
+L’oseh hashamayim bit’vunah, k-l-c
+L’roka ha’aretz al hamayim, k-l-c
+L’oseh orim g’dolim, k-l-c
+Et hashemesh l’memshelet bayom, k-l-c
+Et hayareich v’kochavim
+      l’memsh’lot balaylah, k-l-c
+L’makeh mitzrayim bivchoraihem, k-l-c
+Vayotzai Yisrael mitocham, k-l-c
+B’yad chazakah u’vizro’a n’tuyah, k-l-c
+L’gozer yam suf lig’zarim, k-l-c
+V’he’evir Yisrael b’tocho, k-l-c
+V’ni’er paroah v’chailo b’yam suf, k-l-c
+L’molich amo bamidbar, k-l-c
+L’makeh m’lachim g’dolim, k-l-c
+Vayaharog m’lachim adirim, k-l-c
+L’sichon melech ha’emori, k-l-c
+U’l’og melech habashan, k-l-c
+Vanatan artzam l’nachalah, k-l-c
+Nachalah l’Yisrael avdu, k-l-c
+Sheb’shiflainu zachar lanu, k-l-c
+Vayif’rikainu mitzrainu, k-l-c
+Notein lechem l’chol basar, k-l-c 
+Hodu l’El hashamim, k-l-c
+""")
+
+write_lines(c, "English", 50, 360,
+"""
+Thank the Lord, since He is good, since His kindness is forever. 
+Thank the Power of powers SHKIF
+To the Master of mastersSHKIF
+To the One who alone does wondrously great deeds SHKIF
+To the one who made the Heavens with discernment SHKIF
+To the One who spread the earth over the waters SHKIF
+To the One who made great lights SHKIF
+The sun to rule in the day SHKIF
+The moon and the stars to rule in the night SHKIF
+To the One that smote Egypt through their firstborn SHKIF
+And He took Israel out from among them SHKIF
+With a strong hand and an outstretched forearm SHKIF
+To the One who cut up the Reed Sea into strips SHKIF
+And He made Israel to pass through it SHKIF
+And He jolted Pharaoh and his troop in the Reed Sea SHKIF 
+To the One who led his people in the wilderness SHKIF 
+To the One who smote great kings SHKIF 
+And he killed mighty kings SHKIF Sichon, king of the Amorite SHKIF 
+And Og, king of the Bashan SHKIF 
+And he gave their land as an inheritance SHKIF 
+An inheritance for Israel, His servant SHKIF 
+That in our lowliness, He remembered us SHKIF 
+And he delivered us from our adversaries SHKIF 
+He gives bread to all flesh SHKIF 
+Thank the Power of the heavens SHKIF 
+""")
+
 c.showPage()
 
+write(c, "English", 200, 800, "Hallel, Fourth Cup of Wine")
 
-c.setFont("Hebrew", 14)
-c.drawString(200, 800,  algorithm.get_display("נִרְצָה"))
+write_lines(c, "English", 50, 175,
+"""\
+We say the blessing below and drink the cup while reclining to the left
+""")
+
+write_lines(c, "Hebrew", 200, 150,
+"""\
+בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
+""")
+
+write_lines(c, "English", 50, 125,
+"""\
+Barukh attah adonai, eloheinu melekh ha'olam, boreh pri hagafen
+"""
+)
+
+write_lines(c, "English", 50, 100,
+"""\
+Blessed are You, Lord our God, who creates the fruit of the vine. 
+""")
+
+c.showPage()
+
+write(c, "English", 200, 800, "Nirtzah")
+
+"""
+Chad gadya chad gadya
+dizvan aba bitrey zuzey,
+chad gadya chad gadya.
+Va'ata shunra ve'ahal legadya,
+dizvan aba bitrey zuzey,
+chad gadya chad gadya
+Va'ata kalba venashah leshunra,
+de'ahal legadya,
+dizvan aba bitrey zuzey,
+chad gadya chad gadya.
+Va'ata hutra vehikah lehalba,
+denashah leshunra, de'ahal legadya,
+dizvan aba bitrey zuzey,
+chad gadya chad gadya.
+Va'ata nura vesaraf lehutra,
+dehikah lehalba,
+denashah leshunra, de'ahal legadya, dizvan aba bitrey zuzey, chad gadya
+chad gadya
+
+Va'ata maya vehavah lenura, desaraf lehutra, dehikah lehalba,
+denashah leshunra, de'ahal legadya, dizvan aba bitrey zuzey,
+chad gadya chad gadya
+
+Va'ata tora veshatah lemaya, dehavah lenura, desaraf lehutra,
+dehikah lehalba, denashah leshunra, de'ahal legadya, dizvan
+aba bitrey zuzey, chad gadya chad gadya
+
+Va'ata hashohet veshahat letora, deshatah lemaya, dehavah
+lenura, desaraf lehutra, dehikah lehalba, denashah leshunra, 
+de'ahal legadya, dizvan aba bitrey zuzey, chad gadya chad
+gadya
+
+Va'ata malah hamavet veshahat leshohet, deshahat letora,
+deshatah lemaya, dehavah lenura, desaraf lehutra, dehikah
+lehalba, denashah leshunra, de'ahal legadya, dizvan aba bitrey
+zuzey, chad gadya chad gadya.
+
+Va'ata hakadosh baruh hu veshahat lemalah hamavet, 
+deshahat leshohet, deshahat letora, deshatah lemaya, dehavah
+lenura, desaraf lehutra, dehikah lehalba, denashah leshunra, 
+de'ahal legadya, dizvan aba bitrey zuzey, chad gadya chad
+gadya.Chad gadya chad gadya
+"""
+
 c.showPage()
 
 
