@@ -1178,52 +1178,46 @@ c.showPage()
 
 write(c, "English", 200, 800, "Nirtzah")
 
+lines = [
+("shunra", "akhla"),
+("kalba", "nashakh"),
+("hutra", "hikah"),
+("nura", "saraf"),
+("maya", "khavah"),
+("tora", "shata"),
+("shohet", "shahat"),
+("mal'akh hamavet", "shahat"),
+("hakadosh barukh hu", "shahat"),
+]
+
+text = """\
+Had gadya had gadya
+di'zabin abba bitrei zuzey, had gadya, had gadya
 """
-Chad gadya chad gadya
-dizvan aba bitrey zuzey,
-chad gadya chad gadya.
-Va'ata shunra ve'ahal legadya,
-dizvan aba bitrey zuzey,
-chad gadya chad gadya
-Va'ata kalba venashah leshunra,
-de'ahal legadya,
-dizvan aba bitrey zuzey,
-chad gadya chad gadya.
-Va'ata hutra vehikah lehalba,
-denashah leshunra, de'ahal legadya,
-dizvan aba bitrey zuzey,
-chad gadya chad gadya.
-Va'ata nura vesaraf lehutra,
-dehikah lehalba,
-denashah leshunra, de'ahal legadya, dizvan aba bitrey zuzey, chad gadya
-chad gadya
 
-Va'ata maya vehavah lenura, desaraf lehutra, dehikah lehalba,
-denashah leshunra, de'ahal legadya, dizvan aba bitrey zuzey,
-chad gadya chad gadya
+for i in range(len(lines)):
+    actor, action = lines[i]
+    current = f"Va'ata {actor} ve'{action} "
+    for run, j in enumerate(range(i-1, -1, -1)):
+        actor, action = lines[j]
+        current += f"le'{actor} de'{action}"
+        if run % 3 == 0:
+              current += "\n"
+        else:
+              current += " "
+    current = current[:-1] + " legadya\n"
+    current += "di'zabin abba b'trei zuzey, had gadya, had gadya\n"
+    text += current
 
-Va'ata tora veshatah lemaya, dehavah lenura, desaraf lehutra,
-dehikah lehalba, denashah leshunra, de'ahal legadya, dizvan
-aba bitrey zuzey, chad gadya chad gadya
-
-Va'ata hashohet veshahat letora, deshatah lemaya, dehavah
-lenura, desaraf lehutra, dehikah lehalba, denashah leshunra, 
-de'ahal legadya, dizvan aba bitrey zuzey, chad gadya chad
-gadya
-
-Va'ata malah hamavet veshahat leshohet, deshahat letora,
-deshatah lemaya, dehavah lenura, desaraf lehutra, dehikah
-lehalba, denashah leshunra, de'ahal legadya, dizvan aba bitrey
-zuzey, chad gadya chad gadya.
-
-Va'ata hakadosh baruh hu veshahat lemalah hamavet, 
-deshahat leshohet, deshahat letora, deshatah lemaya, dehavah
-lenura, desaraf lehutra, dehikah lehalba, denashah leshunra, 
-de'ahal legadya, dizvan aba bitrey zuzey, chad gadya chad
-gadya.Chad gadya chad gadya
-"""
+write_lines(c, "English", 50, 750, text)
 
 c.showPage()
+
+heb_lines = [
+("שׁוּנְרָא", "אָכְלָה"),
+
+
+]
 
 
 c.save()
