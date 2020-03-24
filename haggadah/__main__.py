@@ -1215,9 +1215,35 @@ c.showPage()
 
 heb_lines = [
 ("שׁוּנְרָא", "אָכְלָה"),
-
-
+("כַלְבָּא", "נָשַׁךְ"),
+("חוּטְרָא", "הִכָּה"),
+("נוּרָא", "שָׂרַף"),
+("מַיָּא", "כָבָה"),
+("תוֹרָא", "שָׁתָה"),
+("שׁוֹחֵט", "שָׁחַט"),
+("מַלְאָךְ הַמָּוֶת", "שָׁחַט"),
+("הַקָּדוֹשׁ בָּרוּךְ הוּא", "שָׁחַט"),
 ]
 
+heb_text = """\
+חַד גַּדְיָא, חַד גַּדְיָא דְּזַבִּין אַבָּא בִּתְרֵי זוּזֵי, חַד גַּדְיָא, חַד גַּדְיָא.
+"""
+for i in range(len(heb_lines)):
+    actor, action = heb_lines[i]
+    current = f"וְאָתָא {actor} וְ{action} "
+    for run, j in enumerate(range(i-1, -1, -1)):
+        actor, action = heb_lines[j]
+        current += f"לְ{actor} דְּ{action}"
+        if run % 3 == 0:
+              current += "\n"
+        else:
+              current += " "
+    current = current[:-1] + " לְגַדְיָא\n"
+    current += "דְזַבִּין אַבָּא בִּתְרֵי זוּזֵי. חַד גַּדְיָא, חַד גַּדְיָא.\n"
+    heb_text += current
+
+write_lines(c, "Hebrew", 50, 750, heb_text)
+
+c.showPage()
 
 c.save()
