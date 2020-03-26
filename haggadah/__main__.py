@@ -283,6 +283,10 @@ Ilu natan lanu et hatorah, v'lo hichnisanu l'eretz yisraeil, dayeinu.
 Ilu hichnisanu l'eretz yisraeil, v'lo vanah lanu et beit hab'chirah, dayeinu
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
+
 c.showPage()
 
 write_lines(c, "English", 50, 750,
@@ -320,6 +324,10 @@ If He had brought us into the land of Israel and had not built us the
 'Chosen House' [the Temple; it would have been] enough for us.
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
+
 c.showPage()
 
 write(c, "English", 200, 800, "Three Things")
@@ -346,6 +354,10 @@ Anyone who has not said these three things on Pesach has not
 fulfilled his obligation, and these are them:
 the Pesach sacrifice, matsa and marror. 
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
 
 c.showPage()
 
@@ -439,11 +451,14 @@ pond of water,
 the flint into a spring of water.
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
+
 c.showPage()
 
-write(c, "Hebrew", 200, 800,  "קַדֵּשׁ")
+write(c, "English", 200, 800,  "Kadesh")
 
-write(c, "Hebrew", 100, 750, "מוזגים כוס ראשון. המצּות מכוסות.")
 write(c, "English", 100, 725, "We pour the first cup.")
 
 write_lines(c, "Hebrew", 100, 700,
@@ -451,6 +466,8 @@ write_lines(c, "Hebrew", 100, 700,
 סַבְרִי מָרָנָן וְרַבָּנָן וְרַבּוֹתַי.
 בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
 """)
+
+## TODO: Add transliteration
 
 write_lines(c, "English", 100, 650,
 """\
@@ -470,6 +487,9 @@ write_lines(c, "Hebrew", 100, 600,
 כִּי בָנוּ בָחַרְתָּ וְאוֹתָנוּ קִדַּשְׁתָּ מִכָּל הָעַמִּים,
 וּמוֹעֲדֵי קָדְשֶׁךָ בְּשִׂמְחָה וּבְשָׂשוֹן הִנְחַלְתָּנוּ.
 """)
+
+
+## TODO: Add transliteration
 
 write_lines(c, "English", 100, 450,
 """\
@@ -495,6 +515,9 @@ write_lines(c, "Hebrew", 100, 200,
 """\
 בָּרוּךְ אַתָּה ה', מְקַדֵּשׁ יִשְׂרָאֵל וְהַזְּמַנִּים.
 """)
+
+
+## TODO: Add transliteration
 
 write_lines(c, "English", 100, 175,
 """\
