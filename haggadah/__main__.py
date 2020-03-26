@@ -19,6 +19,7 @@ c = canvas.Canvas(sys.argv[1])
 
 c.setFont("English", 36)
 c.drawString(100, 600, "Passover Haggadah")
+c.setTitle("2020 Kid-Friendly Passover Haggadah")
 
 c.showPage()
 
