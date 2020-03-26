@@ -6,7 +6,7 @@ import reportlab
 import haggadah
 
 def install_font():
-    for name in ['ShlomoSemiStam.ttf', 'LinuxLibertine.ttf']:
+    for name in ['ShlomoSemiStam.ttf', 'LinuxLibertine.ttf', 'PlayfairDisplay-Regular.ttf']:
         data = resources.read_binary(haggadah, name)
         location = os.path.dirname(os.path.dirname(reportlab.__file__))
         fonts = os.path.join(location, 'fonts')

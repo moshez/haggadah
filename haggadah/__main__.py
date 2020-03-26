@@ -13,12 +13,42 @@ from bidi import algorithm
 from haggadah.output import write, write_multi, write_lines
 
 pdfmetrics.registerFont(TTFont('Hebrew', 'LinuxLibertine.ttf'))
-pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
+pdfmetrics.registerFont(TTFont('English', 'PlayfairDisplay-Regular.ttf'))
 
 c = canvas.Canvas(sys.argv[1])
 
 c.setFont("English", 36)
 c.drawString(100, 600, "Passover Haggadah")
+
+c.showPage()
+
+write_lines(c, "English", 50, 750,
+"""\
+Welcome to the Kid-Friendly 2020 Haggadah.
+
+We moved Kadesh to the end of Magid, just before the second cup.
+This way, we can start early, and make sure that the sun has set by the
+end of Magid, and not before starting.
+
+There are also designated circles on most pages. For those whose
+observance allows, the kids can put stickers in those circles to decorate
+their haggadah. Encourage them to find relevant stickers to the passage
+we read, so that we can observe the mitzvah of "v'higadta l'binkha", "tell
+your children".
+
+This Haggadah belongs to:
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________
+(Encourage your child to write their name here before passover)
+""")
 
 c.showPage()
 
