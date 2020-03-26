@@ -10,20 +10,24 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 from bidi import algorithm
 
+from haggadah.output import write, write_multi, write_lines
+
 pdfmetrics.registerFont(TTFont('Hebrew', 'LinuxLibertine.ttf'))
 pdfmetrics.registerFont(TTFont('English', 'Vera.ttf'))
 
 c = canvas.Canvas(sys.argv[1])
 
-from haggadah.output import write, write_multi, write_lines
+c.setFont("English", 36)
+c.drawString(100, 600, "Passover Haggadah")
 
-write(c, "Hebrew", 200, 800,
-      "וּרְחַץ")
+c.showPage()
+
+write(c, "English", 200, 800, "Urchatz")
 write(c, "English", 200, 600, "Wash your hands without blessing")
 
 c.showPage()
 
-write(c, "Hebrew", 200, 800,"כַּרְפַּס")
+write(c, "English", 200, 800,"Karpas")
 write(c, "English", 200, 600,
       "Take one small strawberry, "
        "and dip it in chocolate")
@@ -40,7 +44,7 @@ write_multi(c, "English", 100, 300,
 
 c.showPage()
 
-write(c, "Hebrew", 200, 800, "יַחַץ")
+write(c, "Hebrew", 200, 800, "Yahatz")
 write_multi(c, "English", 100, 600,
 ["Split the middle matsah in two, and conceal the larger piece to use",
  "it for the afikoman."])
@@ -49,14 +53,14 @@ write(c, "English", 100, 500, "From now on, the kids should try to steal the afi
 c.showPage()
 
 write(c, "Hebrew", 200, 800,
-      "מַגִּיד")
+      "Magid")
 
 write_multi(c, "English", 50, 600,
 [ "We start in Aramaic. In Jewish tradition, we pray in Hebrew,",
-  " to encourage the angels to intercede on our behalf.",
+  "to encourage the angels to intercede on our behalf.",
  "But tonight, we thank God in person for the miracles.",
  "Angels do not understand Aramaic, so God has to listen to us Himself.",
- "The leader uncovers the matsot, raises the Seder plate. ",
+ "The leader uncovers the matzot, raises the Seder plate. ",
  "Everybody recites:"])
 
 write_multi(c, "Hebrew", 50, 450,
@@ -179,7 +183,7 @@ c.showPage()
 
 write(c, "English", 200, 800, "Dayenu")
 
-write_lines(c, "Hebrew", 50, 375,
+write_lines(c, "Hebrew", 300, 750,
 """\
 כַּמָה מַעֲלוֹת טוֹבוֹת לַמָּקוֹם עָלֵינוּ!
 אִלּוּ הוֹצִיאָנוּ מִמִצְרַיִם וְלֹא עָשָׂה בָהֶם שְׁפָטִים, דַּיֵּנוּ.
@@ -189,8 +193,10 @@ write_lines(c, "Hebrew", 50, 375,
 אִלּוּ נָתַן לָנוּ אֶת־מָמוֹנָם וְלֹא קָרַע לָנוּ אֶת־הַיָּם, דַּיֵּנוּ.
 אִלּוּ קָרַע לָנוּ אֶת־הַיָּם וְלֹא הֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה, דַּיֵּנוּ.
 אִלּוּ הֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה וְלֹא שִׁקַּע צָרֵנוּ בְּתוֹכוֹ דַּיֵּנוּ.
-אִלּוּ שִׁקַּע צָרֵנוּ בְּתוֹכוֹ וְלֹא סִפֵּק צָרְכֵּנוּ בַּמִדְבָּר אַרְבָּעִים שָׁנָה דַּיֵּנוּ.
-אִלּוּ סִפֵּק צָרְכֵּנוּ בְּמִדְבָּר אַרְבָּעִים שָׁנָה וְלֹא הֶאֱכִילָנוּ אֶת־הַמָּן דַּיֵּנוּ.
+אִלּוּ שִׁקַּע צָרֵנוּ בְּתוֹכוֹ וְלֹא סִפֵּק צָרְכֵּנוּ בַּמִדְבָּר
+אַרְבָּעִים שָׁנָה דַּיֵּנוּ.
+אִלּוּ סִפֵּק צָרְכֵּנוּ בְּמִדְבָּר אַרְבָּעִים שָׁנָה
+וְלֹא הֶאֱכִילָנוּ אֶת־הַמָּן דַּיֵּנוּ.
 אִלּוּ הֶאֱכִילָנוּ אֶת־הַמָּן וְלֹא נָתַן לָנוּ אֶת־הַשַׁבָּת, דַּיֵּנוּ.
 אִלּוּ נָתַן לָנוּ אֶת־הַשַׁבָּת, וְלֹא קֵרְבָנוּ לִפְנֵי הַר סִינַי, דַּיֵּנוּ.
 אִלּוּ קֵרְבָנוּ לִפְנֵי הַר סִינַי, וְלא נַתַן לָנוּ אֶת־הַתּוֹרָה. דַּיֵּנוּ.
@@ -198,33 +204,71 @@ write_lines(c, "Hebrew", 50, 375,
 אִלּוּ הִכְנִיסָנוּ לְאֶרֶץ יִשְׂרָאֵל וְלֹא בָנָה לָנוּ אֶת־בֵּית הַבְּחִירָה דַּיֵּנוּ.
 """)
 
+write_lines(c, "English", 50, 750,
+"""\
+Ilu hotzianu mimitzrayim,
+v'lo asah vahem sh'fatim, dayeinu.
+IIu asah vahem sh'fatim,
+v'lo asah veiloheihem, dayeinu.
+Ilu asah veiloheihem,
+v'lo harag et b'choreihem, dayeinu.
+Ilu harag et b'choreihem,
+v'lo natan lanu et mamonam,
+dayeinu.
+Ilu natan lanu et mamonam,
+v'lo kara lanu et hayam, dayeinu.
+Ilu kara lanu et hayam,
+v'lo heeviranu v'tocho vecharavah,
+dayeinu.
+Ilu heeviranu v'tocho vecharavah,
+v'lo shika tzareinu b'tocho, dayeinu.
+Ilu shika tzareinu b'tocho,
+v'lo sipeik tzor'keinu bamidbar arbaim shanah, dayeinu.
+Ilu sipeik tzor'keinu bamidbar arbaim shanah, 
+v'lo heechilanu et haman, dayeinu.
+Ilu heechilanu et haman, v'lo natan lanu et hashabat, dayeinu.
+Ilu natan lanu et hashabat, v'lo keir'vanu lifnei har sinai, dayeinu.
+Ilu keir'vanu lifnei har sinai, v'lo natan lanu et hatorah, dayeinu.
+Ilu natan lanu et hatorah, v'lo hichnisanu l'eretz yisraeil, dayeinu.
+Ilu hichnisanu l'eretz yisraeil, v'lo vanah lanu et beit hab'chirah, dayeinu
+""")
 
-"""
+c.showPage()
+
+write_lines(c, "English", 50, 750,
+"""\
 How many degrees of good did the Place [of all bestow] upon us!
-If He had taken us out of Egypt and not made judgements on them; [it would have been] enough for us.
-If He had made judgments on them and had not made [them] on their gods; [it would have been] enough for us.
-If He had made [them] on their gods and had not killed their firstborn; [it would have been] enough for us.
-If He had killed their firstborn and had not given us their money; [it would have been] enough for us.
-If He had given us their money and had not split the Sea for us; [it would have been] enough for us.
-If He had split the Sea for us and had not taken us through it on dry land; [it would have been] enough for us.
-If He had taken us through it on dry land and had not pushed down our enemies in [the Sea]; [it would have been] enough for us.
-If He had pushed down our enemies in [the Sea] and had not supplied our needs in the wilderness for forty years; [it would have been] enough for us.
-If He had supplied our needs in the wilderness for forty years and had not fed us the manna; [it would have been] enough for us.
-If He had fed us the manna and had not given us the Shabbat; [it would have been] enough for us.
-If He had given us the Shabbat and had not brought us close to Mount Sinai; [it would have been] enough for us.
-If He had brought us close to Mount Sinai and had not given us the Torah; [it would have been] enough for us.
-If He had given us the Torah and had not brought us into the land of Israel; [it would have been] enough for us.
-If He had brought us into the land of Israel and had not built us the 'Chosen House' [the Temple; it would have been] enough for us.
-"""
-
-"""
-עַל אַחַת, כַּמָה וְכַּמָה, טוֹבָה כְפוּלָה וּמְכֻפֶּלֶת לַמָּקוֹם עָלֵינוּ: שֶׁהוֹצִיאָנוּ מִמִּצְרַיִם, וְעָשָׂה בָהֶם שְׁפָטִים, וְעָשָׂה בֵאלֹהֵיהֶם, וְהָרַג אֶת־בְּכוֹרֵיהֶם, וְנָתַן לָנוּ אֶת־מָמוֹנָם, וְקָרַע לָנוּ אֶת־הַיָּם, וְהֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה, וְשִׁקַּע צָרֵנוּ בְּתוֹכוֹ, וְסִפֵּק צָרְכֵּנוּ בַּמִדְבָּר אַרְבָּעִים שָׁנָה, וְהֶאֱכִילָנוּ אֶת־הַמָּן, וְנָתַן לָנוּ אֶת־הַשַּׁבָּת, וְקֵרְבָנוּ לִפְנֵי הַר סִינַי, וְנַתָן לָנוּ אֶת־הַתּוֹרָה, וְהִכְנִיסָנוּ לְאֶרֶץ יִשְׂרָאֵל, וּבָנָה לָנוּ אֶת־בֵּית הַבְּחִירָה לְכַפֵּר עַל־כָּל־עֲוֹנוֹתֵינוּ.
-"""
-
-
-"""
-How much more so is the good that is doubled and quadrupled that the Place [of all bestowed] upon us [enough for us]; since he took us out of Egypt, and made judgments with them, and made [them] with their gods, and killed their firstborn, and gave us their money, and split the Sea for us, and brought us through it on dry land, and pushed down our enemies in [the Sea], and supplied our needs in the wilderness for forty years, and fed us the manna, and gave us the Shabbat, and brought us close to Mount Sinai, and gave us the Torah, and brought us into the land of Israel and built us the 'Chosen House' [the Temple] to atone upon all of our sins. 
-"""
+If He had taken us out of Egypt and not made judgements on them;
+[it would have been] enough for us.
+If He had made judgments on them and had not made [them] on their gods;
+[it would have been] enough for us.
+If He had made [them] on their gods and had not killed their firstborn;
+[it would have been] enough for us.
+If He had killed their firstborn and had not given us their money;
+[it would have been] enough for us.
+If He had given us their money and had not split the Sea for us;
+[it would have been] enough for us.
+If He had split the Sea for us and had not taken us through it on dry land;
+[it would have been] enough for us.
+If He had taken us through it on dry land and had not pushed down our
+enemies in [the Sea]; [it would have been] enough for us.
+If He had pushed down our enemies in [the Sea] and had not supplied
+our needs in the wilderness for forty years;
+[it would have been] enough for us.
+If He had supplied our needs in the wilderness for
+forty years and had not
+fed us the manna; [it would have been] enough for us.
+If He had fed us the manna and had not given us the Shabbat;
+[it would have been] enough for us.
+If He had given us the Shabbat and had not brought us close to Mount Sinai; 
+it would have been] enough for us.
+If He had brought us close to Mount Sinai and had not given us the Torah;
+[it would have been] enough for us.
+If He had given us the Torah and had not brought us into the land of Israel;
+[it would have been] enough for us.
+If He had brought us into the land of Israel and had not built us the
+'Chosen House' [the Temple; it would have been] enough for us.
+""")
 
 c.showPage()
 
