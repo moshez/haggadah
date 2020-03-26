@@ -175,6 +175,56 @@ write_lines(c, "English", 50, 300, """\
 Rabbi Yehuda was accustomed to giving mnemonics:
 Detsakh, Adash, Beachav.""")
 
+c.showPage()
+
+write(c, "English", 200, 800, "Dayenu")
+
+write_lines(c, "Hebrew", 50, 375,
+"""\
+כַּמָה מַעֲלוֹת טוֹבוֹת לַמָּקוֹם עָלֵינוּ!
+אִלּוּ הוֹצִיאָנוּ מִמִצְרַיִם וְלֹא עָשָׂה בָהֶם שְׁפָטִים, דַּיֵּנוּ.
+אִלּוּ עָשָׂה בָהֶם שְׁפָטִים, וְלֹא עָשָׂה בֵאלֹהֵיהֶם, דַּיֵּנוּ.
+אִלּוּ עָשָׂה בֵאלֹהֵיהֶם, וְלֹא הָרַג אֶת־בְּכוֹרֵיהֶם, דַּיֵּנוּ.
+אִלּוּ הָרַג אֶת־בְּכוֹרֵיהֶם וְלֹא נָתַן לָנוּ אֶת־מָמוֹנָם, דַּיֵּנוּ.
+אִלּוּ נָתַן לָנוּ אֶת־מָמוֹנָם וְלֹא קָרַע לָנוּ אֶת־הַיָּם, דַּיֵּנוּ.
+אִלּוּ קָרַע לָנוּ אֶת־הַיָּם וְלֹא הֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה, דַּיֵּנוּ.
+אִלּוּ הֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה וְלֹא שִׁקַּע צָרֵנוּ בְּתוֹכוֹ דַּיֵּנוּ.
+אִלּוּ שִׁקַּע צָרֵנוּ בְּתוֹכוֹ וְלֹא סִפֵּק צָרְכֵּנוּ בַּמִדְבָּר אַרְבָּעִים שָׁנָה דַּיֵּנוּ.
+אִלּוּ סִפֵּק צָרְכֵּנוּ בְּמִדְבָּר אַרְבָּעִים שָׁנָה וְלֹא הֶאֱכִילָנוּ אֶת־הַמָּן דַּיֵּנוּ.
+אִלּוּ הֶאֱכִילָנוּ אֶת־הַמָּן וְלֹא נָתַן לָנוּ אֶת־הַשַׁבָּת, דַּיֵּנוּ.
+אִלּוּ נָתַן לָנוּ אֶת־הַשַׁבָּת, וְלֹא קֵרְבָנוּ לִפְנֵי הַר סִינַי, דַּיֵּנוּ.
+אִלּוּ קֵרְבָנוּ לִפְנֵי הַר סִינַי, וְלא נַתַן לָנוּ אֶת־הַתּוֹרָה. דַּיֵּנוּ.
+אִלּוּ נַתַן לָנוּ אֶת־הַתּוֹרָה וְלֹא הִכְנִיסָנוּ לְאֶרֶץ יִשְׂרָאֵל, דַּיֵּנוּ.
+אִלּוּ הִכְנִיסָנוּ לְאֶרֶץ יִשְׂרָאֵל וְלֹא בָנָה לָנוּ אֶת־בֵּית הַבְּחִירָה דַּיֵּנוּ.
+""")
+
+
+"""
+How many degrees of good did the Place [of all bestow] upon us!
+If He had taken us out of Egypt and not made judgements on them; [it would have been] enough for us.
+If He had made judgments on them and had not made [them] on their gods; [it would have been] enough for us.
+If He had made [them] on their gods and had not killed their firstborn; [it would have been] enough for us.
+If He had killed their firstborn and had not given us their money; [it would have been] enough for us.
+If He had given us their money and had not split the Sea for us; [it would have been] enough for us.
+If He had split the Sea for us and had not taken us through it on dry land; [it would have been] enough for us.
+If He had taken us through it on dry land and had not pushed down our enemies in [the Sea]; [it would have been] enough for us.
+If He had pushed down our enemies in [the Sea] and had not supplied our needs in the wilderness for forty years; [it would have been] enough for us.
+If He had supplied our needs in the wilderness for forty years and had not fed us the manna; [it would have been] enough for us.
+If He had fed us the manna and had not given us the Shabbat; [it would have been] enough for us.
+If He had given us the Shabbat and had not brought us close to Mount Sinai; [it would have been] enough for us.
+If He had brought us close to Mount Sinai and had not given us the Torah; [it would have been] enough for us.
+If He had given us the Torah and had not brought us into the land of Israel; [it would have been] enough for us.
+If He had brought us into the land of Israel and had not built us the 'Chosen House' [the Temple; it would have been] enough for us.
+"""
+
+"""
+עַל אַחַת, כַּמָה וְכַּמָה, טוֹבָה כְפוּלָה וּמְכֻפֶּלֶת לַמָּקוֹם עָלֵינוּ: שֶׁהוֹצִיאָנוּ מִמִּצְרַיִם, וְעָשָׂה בָהֶם שְׁפָטִים, וְעָשָׂה בֵאלֹהֵיהֶם, וְהָרַג אֶת־בְּכוֹרֵיהֶם, וְנָתַן לָנוּ אֶת־מָמוֹנָם, וְקָרַע לָנוּ אֶת־הַיָּם, וְהֶעֱבִירָנוּ בְּתוֹכוֹ בֶּחָרָבָה, וְשִׁקַּע צָרֵנוּ בְּתוֹכוֹ, וְסִפֵּק צָרְכֵּנוּ בַּמִדְבָּר אַרְבָּעִים שָׁנָה, וְהֶאֱכִילָנוּ אֶת־הַמָּן, וְנָתַן לָנוּ אֶת־הַשַּׁבָּת, וְקֵרְבָנוּ לִפְנֵי הַר סִינַי, וְנַתָן לָנוּ אֶת־הַתּוֹרָה, וְהִכְנִיסָנוּ לְאֶרֶץ יִשְׂרָאֵל, וּבָנָה לָנוּ אֶת־בֵּית הַבְּחִירָה לְכַפֵּר עַל־כָּל־עֲוֹנוֹתֵינוּ.
+"""
+
+
+"""
+How much more so is the good that is doubled and quadrupled that the Place [of all bestowed] upon us [enough for us]; since he took us out of Egypt, and made judgments with them, and made [them] with their gods, and killed their firstborn, and gave us their money, and split the Sea for us, and brought us through it on dry land, and pushed down our enemies in [the Sea], and supplied our needs in the wilderness for forty years, and fed us the manna, and gave us the Shabbat, and brought us close to Mount Sinai, and gave us the Torah, and brought us into the land of Israel and built us the 'Chosen House' [the Temple] to atone upon all of our sins. 
+"""
 
 c.showPage()
 
