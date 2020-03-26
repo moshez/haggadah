@@ -1124,7 +1124,7 @@ write_lines(c, "English", 50, 360,
 """
 Thank the Lord, since He is good, since His kindness is forever. 
 Thank the Power of powers SHKIF
-To the Master of mastersSHKIF
+To the Master of masters SHKIF
 To the One who alone does wondrously great deeds SHKIF
 To the one who made the Heavens with discernment SHKIF
 To the One who spread the earth over the waters SHKIF
@@ -1245,5 +1245,37 @@ for i in range(len(heb_lines)):
 write_lines(c, "Hebrew", 50, 750, heb_text)
 
 c.showPage()
+
+eng_lines = [
+    ("cat", "ate"),
+    ("dog", "bit"),
+    ("stick", "hit"),
+    ("fire", "burned"),
+    ("water", "extinguished"),
+    ("bull", "drank"),
+    ("schochet", "slaughtered"),
+    ("angel of death", "slaughtered"),
+    ("Holy One, blessed be He\n", "slaughtered"),
+]
+
+eng_text = """\
+One kid, one kid that my father bought for two zuz, one kid, one kid. 
+"""
+
+for i in range(len(eng_lines)):
+    actor, action = eng_lines[i]
+    current = f"Then came a {actor} and {action} "
+    for run, j in enumerate(range(i-1, -1, -1)):
+        actor, action = eng_lines[j]
+        current += f"the {actor} that {action}"
+        if run % 2 == 0:
+              current += "\n"
+        else:
+              current += " "
+    current = current[:-1] + " the kid\n"
+    current += "that my father bought for two zuz, one kid, one kid.\n"
+    eng_text += current
+
+write_lines(c, "English", 50, 750, eng_text)
 
 c.save()
