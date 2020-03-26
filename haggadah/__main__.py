@@ -25,6 +25,9 @@ c.showPage()
 write(c, "English", 200, 800, "Urchatz")
 write(c, "English", 200, 600, "Wash your hands without blessing")
 
+c.setLineWidth(4)
+c.ellipse(200, 500, 400, 300)
+
 c.showPage()
 
 write(c, "English", 200, 800,"Karpas")
@@ -42,17 +45,22 @@ write_multi(c, "English", 100, 300,
 ["Blessed are You, L-rd our G-d, King of the universe, who creates the ",
  "fruit of the tree."])
 
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
+
 c.showPage()
 
-write(c, "Hebrew", 200, 800, "Yahatz")
+write(c, "English", 200, 800, "Yahatz")
 write_multi(c, "English", 100, 600,
 ["Split the middle matsah in two, and conceal the larger piece to use",
  "it for the afikoman."])
 write(c, "English", 100, 500, "From now on, the kids should try to steal the afikoman.")
 
+c.setLineWidth(4)
+c.ellipse(200, 100, 400, 300)
 c.showPage()
 
-write(c, "Hebrew", 200, 800,
+write(c, "English", 200, 800,
       "Magid")
 
 write_multi(c, "English", 50, 600,
@@ -76,6 +84,9 @@ write_multi(c, "English", 50, 300,
  "v’yifsach. Hashata hacha, l’shanah habaah b’ara d’Yisrael.",
  "Hashata avdei, l’shanah habaah b’nei chorin. "])
 
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
 
 c.showPage()
 
@@ -104,9 +115,14 @@ write_multi(c, "English", 100, 450,
  "On all [other] nights we eat other vegetables;", "tonight (only) marror.",
  "On all [other] nights, we don't dip [our food], even one time;", "tonight [we dip it] twice.",
  "On [all] other nights, we eat either sitting or reclining;", "tonight we all recline."])
+
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
+
 c.showPage()
 
-c.drawString(200, 800, "The Ten Plagues")
+write(c, "English", 200, 800, "The Ten Plagues")
 
 write_lines(c, "English", 100, 750, """\
 And when he says, "blood and fire and pillars of smoke" and the
@@ -178,6 +194,10 @@ write(c, "English", 50, 325, "Rabbi Yehuda haya noten bahem simanim: datzakh ada
 write_lines(c, "English", 50, 300, """\
 Rabbi Yehuda was accustomed to giving mnemonics:
 Detsakh, Adash, Beachav.""")
+
+
+c.setLineWidth(4)
+c.ellipse(200, 50, 400, 250)
 
 c.showPage()
 
