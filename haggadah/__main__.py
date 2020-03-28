@@ -454,7 +454,7 @@ the flint into a spring of water.
 
 
 c.setLineWidth(4)
-c.ellipse(200, 50, 400, 250)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -462,13 +462,18 @@ write(c, "English", 200, 800,  "Kadesh")
 
 write(c, "English", 100, 725, "We pour the first cup.")
 
-write_lines(c, "Hebrew", 100, 700,
+write_lines(c, "Hebrew", 375, 700,
 """\
-סַבְרִי מָרָנָן וְרַבָּנָן וְרַבּוֹתַי.
-בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
+סַבְרִי מָרָנָן וְרַבָּנָן וְרַבּוֹתַי. בָּרוּךְ אַתָּה ה',
+אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
 """)
 
-## TODO: Add transliteration
+write_lines(c, "English", 50, 700,
+"""\
+Savrei m'ranan v'rabotai
+Baruch Attah Adonai, Eloheinu Melekh ha-olam,
+borei pri ha'gafen
+""")
 
 write_lines(c, "English", 100, 650,
 """\
@@ -477,20 +482,31 @@ King of the universe,
 who creates the fruit of the vine.
 """)
 
-write_lines(c, "Hebrew", 100, 600,
+write_lines(c, "Hebrew", 375, 600,
 """\
 בָּרוּךְ אַתָּה ה', אֱלהֵינוּ מֶלֶךְ הָעוֹלָם
-אֲשֶׁר בָּחַר בָּנוּ מִכָּל־עָם וְרוֹמְמָנוּ מִכָּל־לָשׁוֹן וְקִדְּשָׁנוּ בְּמִצְוֹתָיו.
-וַתִּתֶּן לָנוּ ה' אֱלֹהֵינוּ בְּאַהֲבָה מוֹעֲדִים לְשִׂמְחָה,
-חַגִּים וּזְמַנִּים לְשָׂשוֹן,
+אֲשֶׁר בָּחַר בָּנוּ מִכָּל־עָם וְרוֹמְמָנוּ מִכָּל־לָשׁוֹן
+וְקִדְּשָׁנוּ בְּמִצְוֹתָיו. וַתִּתֶּן לָנוּ ה' אֱלֹהֵינוּ בְּאַהֲבָה
+מוֹעֲדִים לְשִׂמְחָה, חַגִּים וּזְמַנִּים לְשָׂשוֹן,
 אֶת יוֹם חַג הַמַּצּוֹת הַזֶּה זְמַן חֵרוּתֵנוּ,
 מִקְרָא קֹדֶשׁ זֵכֶר לִיצִיאַת מִצְרָיִם.
 כִּי בָנוּ בָחַרְתָּ וְאוֹתָנוּ קִדַּשְׁתָּ מִכָּל הָעַמִּים,
 וּמוֹעֲדֵי קָדְשֶׁךָ בְּשִׂמְחָה וּבְשָׂשוֹן הִנְחַלְתָּנוּ.
 """)
 
-
-## TODO: Add transliteration
+write_lines(c, "English", 50, 600,
+"""\
+Baruch Attah Adonai, Eloheinu Melekh ha-olam,
+Asher bahar banu mi'kol 'am v'romemnu
+mi'kol lashon v'kidshanu b'mizvotav
+v'titen lanu, adonai Eloheinu b'ahava
+Mo'adim l'simkha u'zmanim le'sasson,
+et yom hag hamatzot hazeh z'man heruteinu
+mikra kodesh zekher l'ytziat mitzraim
+Ki banu baharta v'otanu kidashta mi'kol
+ha'amim u'moadei kodshekha be'simha
+u'v'sasson hinhaltanu
+""")
 
 write_lines(c, "English", 100, 450,
 """\
@@ -512,13 +528,16 @@ You granted us Your special times for
 happiness and joy.
 """)
 
-write_lines(c, "Hebrew", 100, 200,
+write_lines(c, "Hebrew", 375, 200,
 """\
 בָּרוּךְ אַתָּה ה', מְקַדֵּשׁ יִשְׂרָאֵל וְהַזְּמַנִּים.
 """)
 
+write_lines(c, "English", 50, 200,
+"""\
+Barukh attah adonai, mekadesh Yisrael v'hazmanim      
+""")
 
-## TODO: Add transliteration
 
 write_lines(c, "English", 100, 175,
 """\
@@ -531,6 +550,10 @@ write_lines(c, "English", 100, 125,
 Drink while reclining to the left and do not
 recite a blessing after drinking.
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(365, 215, 565, 415)
 
 c.showPage()
 
@@ -637,6 +660,9 @@ who has sanctified us with His commandments and has commanded us
 on the washing of the hands.
 """)
 
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 c.showPage()
 
 write(c,"English", 200, 800,  "Motzi Matzah")
@@ -685,6 +711,9 @@ eating of matsa.
 """)
 
 
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 c.showPage()
 
 write(c, "English", 200, 800, "Maror")
@@ -711,6 +740,10 @@ Blessed are You, Lord our God, King of the Universe, who has
 sanctified us with His commandments and has commanded us on
 the eating of marror. 
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -748,11 +781,19 @@ in order to fulfill what is stated, (Exodus 12:15):
 "You should eat it upon matsot and marrorim."
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 c.showPage()
 
 write(c, "English", 200, 800, "Shulkhan 'Orekh")
 
 write(c, "English", 50, 750, "We eat and drink")
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -768,6 +809,10 @@ Before eating the afikoman, he should say:
 "In memory of the Pesach sacrifice that was 
 eaten upon being satiated." 
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -1008,6 +1053,10 @@ the holy city, quickly and in our days. Blessed are You, Lord, who
 builds Jerusalem in His mercy. Amen. 
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 c.showPage()
 
 write_lines(c, "English", 50, 750,
@@ -1059,6 +1108,10 @@ rescue and success, blessing and salvation, consolation,
 provision and relief and mercy and life and peace and all 
 good; and may we not lack any good ever.
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -1192,6 +1245,11 @@ bread. The Lord will give courage to His people.
 The Lord will bless His people with peace. 
 """)
 
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
+
 c.showPage()
 
 write(c, "English", 200, 800, "Barekh -- Third Cup")
@@ -1216,6 +1274,11 @@ We drink while reclining and do not say a blessing afterwards.
 
 We pour the cup for Elijah and open the door.
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 
 c.showPage()
 
@@ -1321,26 +1384,31 @@ c.showPage()
 
 write(c, "English", 200, 800, "Hallel, Fourth Cup of Wine")
 
-write_lines(c, "English", 50, 175,
+write_lines(c, "English", 50, 750,
 """\
 We say the blessing below and drink the cup while reclining to the left
 """)
 
-write_lines(c, "Hebrew", 200, 150,
+write_lines(c, "Hebrew", 350, 700,
 """\
 בָּרוּךְ אַתָּה ה', אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם בּוֹרֵא פְּרִי הַגָּפֶן.
 """)
 
-write_lines(c, "English", 50, 125,
+write_lines(c, "English", 50, 700,
 """\
-Barukh attah adonai, eloheinu melekh ha'olam, boreh pri hagafen
+Barukh attah adonai, eloheinu
+melekh ha'olam, boreh pri hagafen
 """
 )
 
-write_lines(c, "English", 50, 100,
+write_lines(c, "English", 50, 650,
 """\
 Blessed are You, Lord our God, who creates the fruit of the vine. 
 """)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -1379,6 +1447,11 @@ for i in range(len(lines)):
 
 write_lines(c, "English", 50, 750, text)
 
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
+
 c.showPage()
 
 heb_lines = [
@@ -1411,6 +1484,11 @@ for i in range(len(heb_lines)):
     heb_text += current
 
 write_lines(c, "Hebrew", 50, 750, heb_text)
+
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.showPage()
 
@@ -1445,5 +1523,9 @@ for i in range(len(eng_lines)):
     eng_text += current
 
 write_lines(c, "English", 50, 750, eng_text)
+
+
+c.setLineWidth(4)
+c.ellipse(100, 50, 300, 250)
 
 c.save()
