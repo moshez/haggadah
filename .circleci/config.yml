@@ -9,13 +9,13 @@ jobs:
     steps:
       - checkout
       - run:
-          command: pip install tox
-          name: ToxInstall
+          command: pip install nox
+          name: NoxInstall
       - run:
-          command: tox
-          name: Tox
+          command: nox
+          name: Nox
       - store_artifacts:
-          path: build/tox/py37/tmp/haggadah.pdf
+          path: build/nox/build_haggadah/tmp/haggadah.pdf
           destination: haggadah.pdf
 
 workflows:
